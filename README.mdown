@@ -38,10 +38,7 @@ See https://github.com/robbiehanson/CocoaLumberjack and https://github.com/fpill
 * RegexKitLite
 http://regexkit.sourceforge.net/RegexKitLite/
 
-* asi-http-request for everything http-related; better alternative to NSConnection
+* asi-http-request for everything http-related; better alternative to NSURLConnection
 https://github.com/pokeb/asi-http-request
-
-* Hockey for Auto-Updating
-https://github.com/TheRealKerni/Hockey
 
 Note: This Template uses many software components, all of them under various open source licenses which some of them with the need for Acknowledgements, see the source files and Acknowledgements.txt for more information.
