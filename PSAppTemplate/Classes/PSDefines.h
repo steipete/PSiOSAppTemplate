@@ -20,7 +20,7 @@
 
 // keys & urls
 #ifndef APPSTORE
-  #define kBetaDistributionUrl @"http://mobileromeo.com/hockey/public/index.php"
+  #define kBetaDistributionUrl @"http://yourserver.com/hockey/public/index.php"
 #endif
 
 #define kFlurryStatisticsKey @"INSERT_FLURRY_KEY"
