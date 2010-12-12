@@ -1,0 +1,47 @@
+This is a working start point for an iOS App. All the little bits are set for you.
+Remember to init all submodules:
+
+git submodule init
+
+git submodule update
+
+This basic template opens a PSTableViewController connected to a navigationController, all in code (there are no nibs).
+
+Whats in the box?
+-----------------
+
+* Localization for English/German pre-setup
+
+* Xcode agnostic gitignore setup
+
+* Completely setup autoupdating via Hockey, with custom Target for instant App-Distribution.
+All you need is to modify the ssh script in the BetaDistribute target and setup a server with the Hockey server parts:
+https://github.com/TheRealKerni/Hockey
+
+* Integrated Crash Reporter Server sender. Just activate in PSDefines and
+https://github.com/TheRealKerni/CrashReporterDemo
+
+* Adapted symbolicator for remove crash report symbolication
+
+* Integrated super fast and efficient YAJL JSON parser
+http://lloyd.github.com/yajl/
+
+* PSFoundation for all those little categories, reachability and co:
+https://github.com/steipete/PSFoundation
+
+* Flurry for app statistics. Just add your statistics key to kFlurryStatisticsKey
+http://www.flurry.com/
+
+* Custom logging (cocoa-lumberjack) with file logging and NSLogger integration
+See https://github.com/robbiehanson/CocoaLumberjack and https://github.com/fpillet/NSLogger
+
+* RegexKitLite
+http://regexkit.sourceforge.net/RegexKitLite/
+
+* asi-http-request for everything http-related; better alternative to NSConnection
+https://github.com/pokeb/asi-http-request
+
+* Hockey for Auto-Updating
+https://github.com/TheRealKerni/Hockey
+
+Note: This Template uses many software components, all of them under various open source licenses which some of them with the need for Acknowledgements, see the source files and Acknowledgements.txt for more information.

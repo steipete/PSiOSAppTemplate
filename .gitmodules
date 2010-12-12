@@ -1,0 +1,9 @@
+[submodule "PSFoundation"]
+	path = PSFoundation
+	url = https://github.com/steipete/PSFoundation.git
+[submodule "asi-http-request"]
+	path = asi-http-request
+	url = https://github.com/pokeb/asi-http-request.git
+[submodule "Hockey"]
+	path = Hockey
+	url = https://github.com/TheRealKerni/Hockey.git
