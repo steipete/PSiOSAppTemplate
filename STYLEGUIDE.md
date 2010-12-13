@@ -30,10 +30,8 @@ Sample Header:
 	//
 	// (no blank line between this comment and the interface)
 	@interface GTMFoo : NSObject {
-	 @private
-	  // Property instance variables are not suffixed with underscore (for convenience reasons)!
-	  NSString *stringProperty;
-	  NSObject *otherObject;
+	  NSString *stringProperty_;
+	  NSObject *otherObject_;
 	  NSString *foo_;
 	  NSString *bar_;
 	}
