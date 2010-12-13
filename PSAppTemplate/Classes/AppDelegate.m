@@ -85,8 +85,8 @@
   [self configureLogger];
   DDLogInfo(LocalizedString(@"PSTemplateWelcomeMessage"));
 
-#ifdef kCrashReporterEnabled
-  [[CrashReportSender sharedCrashReportSender] sendCrashReportToURL:CRASH_REPORTER_URL delegate:self activateFeedback:kCrashReporterFeedbackEnabled];
+#ifdef kUseCrashReporter
+  [[CrashReportSender sharedCrashReportSender] sendCrashReportToURL:[NSURL URLWithString:kCrashReporterUrl] delegate:self activateFeedback:kCrashReporterFeedbackEnabled];
 #endif
 
   // check for NSZombie (memory leak if enabled, but very useful!)

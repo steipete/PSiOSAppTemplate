@@ -24,3 +24,4 @@
 #endif
 
 #define kFlurryStatisticsKey @"INSERT_FLURRY_KEY"
+#define kCrashReporterUrl @"http://path-to-crashreporter.com/crashreporter/crash_v200.php"
