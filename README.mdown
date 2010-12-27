@@ -38,6 +38,10 @@ See https://github.com/robbiehanson/CocoaLumberjack and https://github.com/fpill
 * RegexKitLite
 http://regexkit.sourceforge.net/RegexKitLite/
 
+* FTLocationSimualtor for debugging CoreLocation in the Simulator
+https://github.com/futuretap/FTLocationSimulator
+
+
 * asi-http-request for everything http-related; better alternative to NSURLConnection
 https://github.com/pokeb/asi-http-request
 

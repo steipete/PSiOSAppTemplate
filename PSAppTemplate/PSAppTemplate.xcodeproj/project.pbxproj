@@ -13,6 +13,10 @@
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		2892E4100DC94CBA00A64D0F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */; };
 		28C286E10D94DF7D0034E888 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C286E00D94DF7D0034E888 /* RootViewController.m */; };
+		3994620612C91F03005574A6 /* fakeLocations.kml in Resources */ = {isa = PBXBuildFile; fileRef = 3994620312C91F03005574A6 /* fakeLocations.kml */; };
+		3994620712C91F03005574A6 /* FTLocationSimulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 3994620512C91F03005574A6 /* FTLocationSimulator.m */; };
+		3994620C12C91F1D005574A6 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3994620B12C91F1D005574A6 /* CoreLocation.framework */; };
+		3994621012C91F27005574A6 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3994620F12C91F27005574A6 /* MapKit.framework */; };
 		7856A40C12B441D10025424F /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7856A40B12B441D10025424F /* MobileCoreServices.framework */; };
 		7856A40E12B441E00025424F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7856A40D12B441E00025424F /* SystemConfiguration.framework */; };
 		7856A41412B441F40025424F /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7856A41312B441F40025424F /* libz.1.1.3.dylib */; };
@@ -102,6 +106,11 @@
 		28C286DF0D94DF7D0034E888 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		28C286E00D94DF7D0034E888 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3994620312C91F03005574A6 /* fakeLocations.kml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = fakeLocations.kml; sourceTree = "<group>"; };
+		3994620412C91F03005574A6 /* FTLocationSimulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTLocationSimulator.h; sourceTree = "<group>"; };
+		3994620512C91F03005574A6 /* FTLocationSimulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTLocationSimulator.m; sourceTree = "<group>"; };
+		3994620B12C91F1D005574A6 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		3994620F12C91F27005574A6 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		7856A40B12B441D10025424F /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		7856A40D12B441E00025424F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		7856A41312B441F40025424F /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
@@ -205,6 +214,8 @@
 				78E9B18D12B449B800B32768 /* libFlurry.a in Frameworks */,
 				78E9B1C312B44BB900B32768 /* QuartzCore.framework in Frameworks */,
 				78E9B25212B4514200B32768 /* libicucore.A.dylib in Frameworks */,
+				3994620C12C91F1D005574A6 /* CoreLocation.framework in Frameworks */,
+				3994621012C91F27005574A6 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +300,7 @@
 				7856A44C12B4445C0025424F /* CrashReporterSender */,
 				78E9B20812B44D4300B32768 /* regexkitlite */,
 				78E9B18912B449B800B32768 /* FlurryLib */,
+				3994620212C91F03005574A6 /* FTLocationSimulator */,
 				7856A41B12B442240025424F /* YAJL.framework */,
 				78E9B1C212B44BB900B32768 /* QuartzCore.framework */,
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
@@ -301,9 +313,22 @@
 				7856A41712B442070025424F /* CFNetwork.framework */,
 				7856A41912B4420E0025424F /* Security.framework */,
 				78E9B25112B4514200B32768 /* libicucore.A.dylib */,
+				3994620B12C91F1D005574A6 /* CoreLocation.framework */,
+				3994620F12C91F27005574A6 /* MapKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
+		};
+		3994620212C91F03005574A6 /* FTLocationSimulator */ = {
+			isa = PBXGroup;
+			children = (
+				3994620312C91F03005574A6 /* fakeLocations.kml */,
+				3994620412C91F03005574A6 /* FTLocationSimulator.h */,
+				3994620512C91F03005574A6 /* FTLocationSimulator.m */,
+			);
+			name = FTLocationSimulator;
+			path = ../FTLocationSimulator;
+			sourceTree = SOURCE_ROOT;
 		};
 		7856A44C12B4445C0025424F /* CrashReporterSender */ = {
 			isa = PBXGroup;
@@ -574,6 +599,7 @@
 				78BCB99312B524440093AE0C /* Hockey.strings in Resources */,
 				78BCB99412B524440093AE0C /* License.md in Resources */,
 				78BCBB2A12B5323D0093AE0C /* Localizable.strings in Resources */,
+				3994620612C91F03005574A6 /* fakeLocations.kml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -631,6 +657,7 @@
 				78BCB99B12B524440093AE0C /* NSString+URLEncoding.m in Sources */,
 				78BCB99C12B524440093AE0C /* BWHockeyController.m in Sources */,
 				78BCB99D12B524440093AE0C /* BWHockeyViewController.m in Sources */,
+				3994620712C91F03005574A6 /* FTLocationSimulator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
