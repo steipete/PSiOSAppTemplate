@@ -68,7 +68,7 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = 7856A47312B444A80025424F /* PSFoundation.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = 390BAB2712C9438B00C39661 /* libPSFoundation_CoreLocation.a */;
+			remoteGlobalIDString = 390BAB2712C9438B00C39661;
 			remoteInfo = PSFoundation_CoreLocation;
 		};
 		7856A43E12B443A00025424F /* PBXContainerItemProxy */ = {

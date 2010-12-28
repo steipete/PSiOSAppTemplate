@@ -35,6 +35,9 @@ http://www.flurry.com/
 * Custom logging (cocoa-lumberjack) with file logging and NSLogger integration
 See https://github.com/robbiehanson/CocoaLumberjack and https://github.com/fpillet/NSLogger
 
+* Colored Logging-Output using XcodeColors in Simulator
+http://deepit.ru/products/XcodeColors/info/
+
 * RegexKitLite
 http://regexkit.sourceforge.net/RegexKitLite/
 
