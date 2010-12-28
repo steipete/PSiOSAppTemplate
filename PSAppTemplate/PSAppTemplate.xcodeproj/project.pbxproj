@@ -61,10 +61,16 @@
 		78E9B2B212B4575200B32768 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 78E9B2AB12B4575200B32768 /* Icon.png */; };
 		78E9B2B312B4575200B32768 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 78E9B2AC12B4575200B32768 /* Icon@2x.png */; };
 		78E9B2B412B4575200B32768 /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = 78E9B2AD12B4575200B32768 /* iTunesArtwork */; };
-		78E9B2B812B4576500B32768 /* Appirater.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E9B2B712B4576500B32768 /* Appirater.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		3939D5B112CA36EA00089568 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7856A47312B444A80025424F /* PSFoundation.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 390BAB2712C9438B00C39661 /* libPSFoundation_CoreLocation.a */;
+			remoteInfo = PSFoundation_CoreLocation;
+		};
 		7856A43E12B443A00025424F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
@@ -189,8 +195,6 @@
 		78E9B2AB12B4575200B32768 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = Images/Icon.png; sourceTree = "<group>"; };
 		78E9B2AC12B4575200B32768 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "Images/Icon@2x.png"; sourceTree = "<group>"; };
 		78E9B2AD12B4575200B32768 /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; name = iTunesArtwork; path = Images/iTunesArtwork; sourceTree = "<group>"; };
-		78E9B2B612B4576500B32768 /* Appirater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Appirater.h; sourceTree = "<group>"; };
-		78E9B2B712B4576500B32768 /* Appirater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Appirater.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* PSAppTemplate-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "PSAppTemplate-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -295,7 +299,6 @@
 				7856A47312B444A80025424F /* PSFoundation.xcodeproj */,
 				78BCB96F12B524320093AE0C /* Hockey */,
 				78E9B21212B44DDA00B32768 /* asi-http-request */,
-				78E9B2B512B4576500B32768 /* Appirater */,
 				7856A44B12B4445C0025424F /* CrashReporter.framework */,
 				7856A44C12B4445C0025424F /* CrashReporterSender */,
 				78E9B20812B44D4300B32768 /* regexkitlite */,
@@ -346,6 +349,7 @@
 			children = (
 				7856A47C12B444A80025424F /* libPSFoundation_CoreData.a */,
 				7856A47E12B444A80025424F /* libPSFoundation.a */,
+				3939D5B212CA36EA00089568 /* libPSFoundation_CoreLocation.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -483,16 +487,6 @@
 			name = "asi-http-request";
 			sourceTree = "<group>";
 		};
-		78E9B2B512B4576500B32768 /* Appirater */ = {
-			isa = PBXGroup;
-			children = (
-				78E9B2B612B4576500B32768 /* Appirater.h */,
-				78E9B2B712B4576500B32768 /* Appirater.m */,
-			);
-			name = Appirater;
-			path = ../PSFoundation/ExternalFrameworks/Appirater;
-			sourceTree = SOURCE_ROOT;
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -566,6 +560,13 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		3939D5B212CA36EA00089568 /* libPSFoundation_CoreLocation.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libPSFoundation_CoreLocation.a;
+			remoteRef = 3939D5B112CA36EA00089568 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		7856A47C12B444A80025424F /* libPSFoundation_CoreData.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -646,7 +647,6 @@
 				78E9B23212B44DE400B32768 /* ASIHTTPRequest.m in Sources */,
 				78E9B23312B44DE400B32768 /* ASIInputStream.m in Sources */,
 				78E9B23412B44DE400B32768 /* ASINetworkQueue.m in Sources */,
-				78E9B2B812B4576500B32768 /* Appirater.m in Sources */,
 				78BCB99112B524440093AE0C /* BWWebViewController.m in Sources */,
 				78BCB99512B524440093AE0C /* NSObject+SBJSON.m in Sources */,
 				78BCB99612B524440093AE0C /* NSString+SBJSON.m in Sources */,
