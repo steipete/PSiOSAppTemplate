@@ -17,7 +17,6 @@
 		3994620712C91F03005574A6 /* FTLocationSimulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 3994620512C91F03005574A6 /* FTLocationSimulator.m */; };
 		3994620C12C91F1D005574A6 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3994620B12C91F1D005574A6 /* CoreLocation.framework */; };
 		3994621012C91F27005574A6 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3994620F12C91F27005574A6 /* MapKit.framework */; };
-		39CCB5F612CC99B500F78C26 /* libTapkuLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 39CCB5BE12CC986800F78C26 /* libTapkuLibrary.a */; };
 		7856A40C12B441D10025424F /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7856A40B12B441D10025424F /* MobileCoreServices.framework */; };
 		7856A40E12B441E00025424F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7856A40D12B441E00025424F /* SystemConfiguration.framework */; };
 		7856A41412B441F40025424F /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7856A41312B441F40025424F /* libz.1.1.3.dylib */; };
@@ -72,27 +71,6 @@
 			remoteGlobalIDString = 390BAB2712C9438B00C39661;
 			remoteInfo = PSFoundation_CoreLocation;
 		};
-		39CCB5BD12CC986800F78C26 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 39CCB5B512CC986700F78C26 /* TapkuLibrary.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = D2AAC07E0554694100DB518D /* libTapkuLibrary.a */;
-			remoteInfo = TapkuLibrary;
-		};
-		39CCB5BF12CC986800F78C26 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 39CCB5B512CC986700F78C26 /* TapkuLibrary.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 3B6EDD521154791900E454DA /* libTapkuLibraryExtra.a */;
-			remoteInfo = TapkuLibraryExtra;
-		};
-		39CCB5C112CC989900F78C26 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 39CCB5B512CC986700F78C26 /* TapkuLibrary.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = D2AAC07D0554694100DB518D /* TapkuLibrary */;
-			remoteInfo = TapkuLibrary;
-		};
 		7856A43E12B443A00025424F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
@@ -139,7 +117,6 @@
 		3994620512C91F03005574A6 /* FTLocationSimulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTLocationSimulator.m; sourceTree = "<group>"; };
 		3994620B12C91F1D005574A6 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		3994620F12C91F27005574A6 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		39CCB5B512CC986700F78C26 /* TapkuLibrary.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TapkuLibrary.xcodeproj; path = ../TapkuLibrary/TapkuLibrary.xcodeproj; sourceTree = SOURCE_ROOT; };
 		7856A40B12B441D10025424F /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		7856A40D12B441E00025424F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		7856A41312B441F40025424F /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
@@ -226,7 +203,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				39CCB5F612CC99B500F78C26 /* libTapkuLibrary.a in Frameworks */,
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				2892E4100DC94CBA00A64D0F /* CoreGraphics.framework in Frameworks */,
@@ -320,7 +296,6 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				39CCB5B512CC986700F78C26 /* TapkuLibrary.xcodeproj */,
 				7856A47312B444A80025424F /* PSFoundation.xcodeproj */,
 				78BCB96F12B524320093AE0C /* Hockey */,
 				78E9B21212B44DDA00B32768 /* asi-http-request */,
@@ -357,15 +332,6 @@
 			name = FTLocationSimulator;
 			path = ../FTLocationSimulator;
 			sourceTree = SOURCE_ROOT;
-		};
-		39CCB5B612CC986700F78C26 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				39CCB5BE12CC986800F78C26 /* libTapkuLibrary.a */,
-				39CCB5C012CC986800F78C26 /* libTapkuLibraryExtra.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
 		};
 		7856A44C12B4445C0025424F /* CrashReporterSender */ = {
 			isa = PBXGroup;
@@ -536,7 +502,6 @@
 			);
 			dependencies = (
 				7856A48112B444B10025424F /* PBXTargetDependency */,
-				39CCB5C212CC989900F78C26 /* PBXTargetDependency */,
 			);
 			name = PSAppTemplate;
 			productName = PSAppTemplate;
@@ -585,10 +550,6 @@
 					ProductGroup = 7856A47412B444A80025424F /* Products */;
 					ProjectRef = 7856A47312B444A80025424F /* PSFoundation.xcodeproj */;
 				},
-				{
-					ProductGroup = 39CCB5B612CC986700F78C26 /* Products */;
-					ProjectRef = 39CCB5B512CC986700F78C26 /* TapkuLibrary.xcodeproj */;
-				},
 			);
 			projectRoot = "";
 			targets = (
@@ -604,20 +565,6 @@
 			fileType = archive.ar;
 			path = libPSFoundation_CoreLocation.a;
 			remoteRef = 3939D5B112CA36EA00089568 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		39CCB5BE12CC986800F78C26 /* libTapkuLibrary.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libTapkuLibrary.a;
-			remoteRef = 39CCB5BD12CC986800F78C26 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		39CCB5C012CC986800F78C26 /* libTapkuLibraryExtra.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libTapkuLibraryExtra.a;
-			remoteRef = 39CCB5BF12CC986800F78C26 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		7856A47C12B444A80025424F /* libPSFoundation_CoreData.a */ = {
@@ -724,11 +671,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		39CCB5C212CC989900F78C26 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = TapkuLibrary;
-			targetProxy = 39CCB5C112CC989900F78C26 /* PBXContainerItemProxy */;
-		};
 		7856A43F12B443A00025424F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 1D6058900D05DD3D006BFB54 /* PSAppTemplate */;
