@@ -23,11 +23,11 @@
 		7856A41612B441FB0025424F /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7856A41512B441FB0025424F /* AudioToolbox.framework */; };
 		7856A41812B442070025424F /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7856A41712B442070025424F /* CFNetwork.framework */; };
 		7856A41A12B4420E0025424F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7856A41912B4420E0025424F /* Security.framework */; };
-		7856A41C12B442240025424F /* YAJL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7856A41B12B442240025424F /* YAJL.framework */; };
 		7856A45212B4445C0025424F /* CrashReporter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7856A44B12B4445C0025424F /* CrashReporter.framework */; };
 		7856A45312B4445C0025424F /* CrashReportSender.m in Sources */ = {isa = PBXBuildFile; fileRef = 7856A44E12B4445C0025424F /* CrashReportSender.m */; };
 		7856A45412B4445C0025424F /* CrashReporter.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7856A44F12B4445C0025424F /* CrashReporter.strings */; };
 		7856A47F12B444AD0025424F /* libPSFoundation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7856A47E12B444A80025424F /* libPSFoundation.a */; };
+		787BC4F612DB0C6E008DC03C /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 787BC4F512DB0C6E008DC03C /* JSONKit.m */; };
 		78BCB99112B524440093AE0C /* BWWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78BCB97312B524430093AE0C /* BWWebViewController.m */; };
 		78BCB99212B524440093AE0C /* Hockey.strings in Resources */ = {isa = PBXBuildFile; fileRef = 78BCB97512B524430093AE0C /* Hockey.strings */; };
 		78BCB99312B524440093AE0C /* Hockey.strings in Resources */ = {isa = PBXBuildFile; fileRef = 78BCB97812B524430093AE0C /* Hockey.strings */; };
@@ -123,7 +123,6 @@
 		7856A41512B441FB0025424F /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		7856A41712B442070025424F /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		7856A41912B4420E0025424F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		7856A41B12B442240025424F /* YAJL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = YAJL.framework; path = ../YAJL.framework; sourceTree = SOURCE_ROOT; };
 		7856A43712B443860025424F /* BetaDistribute.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BetaDistribute.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7856A44612B444120025424F /* ReleaseNotes.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = ReleaseNotes.html; path = ../ReleaseNotes.html; sourceTree = SOURCE_ROOT; };
 		7856A44B12B4445C0025424F /* CrashReporter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CrashReporter.framework; path = ../CrashReporter.framework; sourceTree = SOURCE_ROOT; };
@@ -133,6 +132,8 @@
 		7856A45112B4445C0025424F /* German */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = German; path = German.lproj/CrashReporter.strings; sourceTree = "<group>"; };
 		7856A46412B444640025424F /* README.mdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README.mdown; path = ../README.mdown; sourceTree = SOURCE_ROOT; };
 		7856A47312B444A80025424F /* PSFoundation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PSFoundation.xcodeproj; path = ../PSFoundation/PSFoundation.xcodeproj; sourceTree = SOURCE_ROOT; };
+		787BC4F412DB0C6E008DC03C /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSONKit.h; path = ../JSONKit/JSONKit.h; sourceTree = SOURCE_ROOT; };
+		787BC4F512DB0C6E008DC03C /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSONKit.m; path = ../JSONKit/JSONKit.m; sourceTree = SOURCE_ROOT; };
 		78BCB97212B524430093AE0C /* BWWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BWWebViewController.h; sourceTree = "<group>"; };
 		78BCB97312B524430093AE0C /* BWWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BWWebViewController.m; sourceTree = "<group>"; };
 		78BCB97612B524430093AE0C /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = Hockey.strings; sourceTree = "<group>"; };
@@ -212,7 +213,6 @@
 				7856A41612B441FB0025424F /* AudioToolbox.framework in Frameworks */,
 				7856A41812B442070025424F /* CFNetwork.framework in Frameworks */,
 				7856A41A12B4420E0025424F /* Security.framework in Frameworks */,
-				7856A41C12B442240025424F /* YAJL.framework in Frameworks */,
 				7856A45212B4445C0025424F /* CrashReporter.framework in Frameworks */,
 				7856A47F12B444AD0025424F /* libPSFoundation.a in Frameworks */,
 				78E9B18D12B449B800B32768 /* libFlurry.a in Frameworks */,
@@ -296,6 +296,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				787BC4EF12DB0C62008DC03C /* JSON */,
 				7856A47312B444A80025424F /* PSFoundation.xcodeproj */,
 				78BCB96F12B524320093AE0C /* Hockey */,
 				78E9B21212B44DDA00B32768 /* asi-http-request */,
@@ -304,7 +305,6 @@
 				78E9B20812B44D4300B32768 /* regexkitlite */,
 				78E9B18912B449B800B32768 /* FlurryLib */,
 				3994620212C91F03005574A6 /* FTLocationSimulator */,
-				7856A41B12B442240025424F /* YAJL.framework */,
 				78E9B1C212B44BB900B32768 /* QuartzCore.framework */,
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
@@ -352,6 +352,15 @@
 				3939D5B212CA36EA00089568 /* libPSFoundation_CoreLocation.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		787BC4EF12DB0C62008DC03C /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				787BC4F412DB0C6E008DC03C /* JSONKit.h */,
+				787BC4F512DB0C6E008DC03C /* JSONKit.m */,
+			);
+			name = JSON;
 			sourceTree = "<group>";
 		};
 		78BCB96F12B524320093AE0C /* Hockey */ = {
@@ -658,6 +667,7 @@
 				78BCB99C12B524440093AE0C /* BWHockeyController.m in Sources */,
 				78BCB99D12B524440093AE0C /* BWHockeyViewController.m in Sources */,
 				3994620712C91F03005574A6 /* FTLocationSimulator.m in Sources */,
+				787BC4F612DB0C6E008DC03C /* JSONKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -769,10 +779,7 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = (
-					"..//**",
-					"../YAJL.framework/**",
-				);
+				FRAMEWORK_SEARCH_PATHS = "..//**";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_PREPROCESSOR_DEFINITIONS = APPSTORE;
 				"GCC_THUMB_SUPPORT[arch=armv6]" = NO;
@@ -885,10 +892,7 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = (
-					"..//**",
-					"../YAJL.framework/**",
-				);
+				FRAMEWORK_SEARCH_PATHS = "..//**";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
 				"GCC_THUMB_SUPPORT[arch=armv6]" = NO;
@@ -921,10 +925,7 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = (
-					"..//**",
-					"../YAJL.framework/**",
-				);
+				FRAMEWORK_SEARCH_PATHS = "..//**";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_PREPROCESSOR_DEFINITIONS = DISTRIBUTION;
 				"GCC_THUMB_SUPPORT[arch=armv6]" = NO;
