@@ -214,7 +214,7 @@
 		78E9B2AB12B4575200B32768 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = Images/Icon.png; sourceTree = "<group>"; };
 		78E9B2AC12B4575200B32768 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "Images/Icon@2x.png"; sourceTree = "<group>"; };
 		78E9B2AD12B4575200B32768 /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; name = iTunesArtwork; path = Images/iTunesArtwork; sourceTree = "<group>"; };
-		8D1107310486CEB800E47090 /* PSAppTemplate-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "PSAppTemplate-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -299,8 +299,12 @@
 				78E9B2AB12B4575200B32768 /* Icon.png */,
 				78E9B2AC12B4575200B32768 /* Icon@2x.png */,
 				78E9B2AD12B4575200B32768 /* iTunesArtwork */,
+<<<<<<< HEAD
 				8D1107310486CEB800E47090 /* PSAppTemplate-Info.plist */,
 				7876F55D130D85E600A79E01 /* PSAppTemplate-Build-Info.plist */,
+=======
+				8D1107310486CEB800E47090 /* Info.plist */,
+>>>>>>> 3fdc26e50dc2dfaa5549438eb82f6f6c8800c53f
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -748,7 +752,11 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = PSAppTemplate_Prefix.pch;
+<<<<<<< HEAD
 				INFOPLIST_FILE = "PSAppTemplate-Build-Info.plist";
+=======
+				INFOPLIST_FILE = Info.plist;
+>>>>>>> 3fdc26e50dc2dfaa5549438eb82f6f6c8800c53f
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../Flurry/iPhone v2.7 (build 42)/FlurryLib\"",
@@ -768,7 +776,11 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = PSAppTemplate_Prefix.pch;
+<<<<<<< HEAD
 				INFOPLIST_FILE = "PSAppTemplate-Build-Info.plist";
+=======
+				INFOPLIST_FILE = Info.plist;
+>>>>>>> 3fdc26e50dc2dfaa5549438eb82f6f6c8800c53f
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../Flurry/iPhone v2.7 (build 42)/FlurryLib\"",
@@ -825,7 +837,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = PSAppTemplate_Prefix.pch;
-				INFOPLIST_FILE = "PSAppTemplate-Info.plist";
+				INFOPLIST_FILE = Info.plist;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../Flurry/iPhone v2.7 (build 42)/FlurryLib\"",
@@ -841,21 +853,67 @@
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
+<<<<<<< HEAD
 				PRODUCT_NAME = AdHocDistribute;
+=======
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/UIKit.framework/Headers/UIKit.h";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PREBINDING = NO;
+				PRODUCT_NAME = BetaDistribute;
+				SDKROOT = iphoneos;
+>>>>>>> 3fdc26e50dc2dfaa5549438eb82f6f6c8800c53f
 			};
 			name = Debug;
 		};
 		7876F573130D869A00A79E01 /* Distribution */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+<<<<<<< HEAD
 				PRODUCT_NAME = AdHocDistribute;
+=======
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/UIKit.framework/Headers/UIKit.h";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					UIKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = BetaDistribute;
+				SDKROOT = iphoneos;
+>>>>>>> 3fdc26e50dc2dfaa5549438eb82f6f6c8800c53f
 			};
 			name = Distribution;
 		};
 		7876F574130D869A00A79E01 /* AppStore */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+<<<<<<< HEAD
 				PRODUCT_NAME = AdHocDistribute;
+=======
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/UIKit.framework/Headers/UIKit.h";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					UIKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = BetaDistribute;
+				SDKROOT = iphoneos;
+>>>>>>> 3fdc26e50dc2dfaa5549438eb82f6f6c8800c53f
 			};
 			name = AppStore;
 		};
@@ -884,10 +942,7 @@
 				GCC_WARN_UNUSED_LABEL = YES;
 				GCC_WARN_UNUSED_VALUE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = (
-					"../TapkuLibrary/**",
-					"../PSFoundation/**",
-				);
+				HEADER_SEARCH_PATHS = "../PSFoundation/**";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				OTHER_LDFLAGS = "-all_load";
 				PREBINDING = NO;
