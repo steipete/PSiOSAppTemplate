@@ -9,10 +9,6 @@
 #import "AppDelegate.h"
 #import "RootViewController.h"
 
-#if !defined (APPSTORE)
-#import "BWHockeyController.h"
-#endif
-
 #ifdef kUseFlurryStatistics
 #import "FlurryAPI.h"
 #endif
@@ -119,7 +115,8 @@
   
 #if !defined (APPSTORE)
   DDLogInfo(@"Autoupdate is enabled.");
-  [[BWHockeyController sharedHockeyController] setBetaURL:kBetaDistributionUrl];
+  [BWHockeyManager sharedHockeyManager].updateURL = kHockeyUpdateDistributionUrl;
+  [BWHockeyManager sharedHockeyManager].delegate = self;
 #endif
   
   return YES;
@@ -156,9 +153,9 @@
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 #pragma mark -
-#pragma mark CrashReportSenderDelegate
+#pragma mark CrashReportSenderDelegate AND BWHockeyManagerDelegate
 
-#ifdef kUseCrashReporter
+#if defined(kUseCrashReporter) || defined(kUseAutoUpdater)
 - (void)connectionOpened {
   [[IKNetworkActivityManager sharedInstance] addNetworkUser:self];
 }
@@ -166,7 +163,9 @@
 - (void)connectionClosed {
   [[IKNetworkActivityManager sharedInstance] removeNetworkUser:self];
 }
+#endif
 
+#if defined(kUseCrashReporter)
 - (NSString *)crashReportDescription {
   NSString *deviceInfo = [UIDevice debugInfo];
   DDLogInfo(deviceInfo);
