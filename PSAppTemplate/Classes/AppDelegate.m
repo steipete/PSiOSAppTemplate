@@ -117,6 +117,7 @@
   DDLogInfo(@"Autoupdate is enabled.");
   [BWHockeyManager sharedHockeyManager].updateURL = kHockeyUpdateDistributionUrl;
   [BWHockeyManager sharedHockeyManager].delegate = self;
+  [BWHockeyManager sharedHockeyManager].alwaysShowUpdateReminder = YES;  
 #endif
   
   return YES;

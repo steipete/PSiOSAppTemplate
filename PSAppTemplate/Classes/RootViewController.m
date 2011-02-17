@@ -60,6 +60,10 @@
 
 - (void)viewDidAppear:(BOOL)animated {
   [super viewDidAppear:animated];
+  
+  UIImageView *lolcatImage = [UIImageView imageViewNamed:@"lolcat"];
+  lolcatImage.frame = CGRectMake(10, 100, 356*0.8, 512*0.8);
+//  [self.tableView addSubview:lolcatImage];
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
