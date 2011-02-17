@@ -9,7 +9,7 @@
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.yourcompany.${PRODUCT_NAME:rfc1034identifier}</string>
+	<string>com.petersteinberger.${PRODUCT_NAME:rfc1034identifier}</string>
 	<key>CFBundleIconFiles</key>
 	<array>
 		<string>Icon.png</string>
@@ -28,6 +28,8 @@
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
+	<string>${BUILD_NUMBER}</string>
+	<key>CFBundleShortVersionString</key>
 	<string>${APP_VERSION}</string>
 	<key>UIPrerenderedIcon</key>
 	<false/>

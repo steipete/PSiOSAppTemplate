@@ -1,0 +1,6 @@
+//
+//  appstore.xcconfig
+//
+
+#include "buildnumber.xcconfig"
+#include "appversion.xcconfig"
