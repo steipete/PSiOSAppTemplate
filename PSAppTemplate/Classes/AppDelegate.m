@@ -30,25 +30,25 @@
   PSDDFormatter *psLogger = [[[PSDDFormatter alloc] init] autorelease];
   [[DDTTYLogger sharedInstance] setLogFormatter:psLogger];
   [DDLog addLogger:[DDTTYLogger sharedInstance]];
-
+  
 #ifndef APPSTORE
   // log to file
   DDFileLogger *fileLogger = [[[DDFileLogger alloc] init] autorelease];
   fileLogger.rollingFrequency = 60 * 60 * 24; // 24 hour rolling
   fileLogger.logFileManager.maximumNumberOfLogFiles = 7;
   [DDLog addLogger:fileLogger];
-
+  
 #ifndef DISTRIBUTION
-  // log to network
-  [DDLog addLogger:[DDNSLoggerLogger sharedInstance]];
+  // log to network (disabled for now, as it breaks clang 1.7)
+  // [DDLog addLogger:[DDNSLoggerLogger sharedInstance]];
 #endif
-
+  
 #endif
 }
 
 - (void)appplicationWillSuspend:(UIApplication *)application {
   DDLogInfo(@"detected application termination.");
-
+  
   // post notification to all listeners
   [[NSNotificationCenter defaultCenter] postNotificationName:kAppplicationWillSuspend object:application];
 }
@@ -73,8 +73,8 @@
   MCRelease(splashView_);
   MCRelease(window_);
   MCRelease(navigationController_);
-
-	[super dealloc];
+  
+  [super dealloc];
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
@@ -84,23 +84,23 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
   [self configureLogger];
   DDLogInfo(LocalizedString(@"PSTemplateWelcomeMessage"));
-
+  
 #ifdef kUseCrashReporter
   [[CrashReportSender sharedCrashReportSender] sendCrashReportToURL:[NSURL URLWithString:kCrashReporterUrl] delegate:self activateFeedback:kCrashReporterFeedbackEnabled];
 #endif
-
+  
   // check for NSZombie (memory leak if enabled, but very useful!)
   if(getenv("NSZombieEnabled") || getenv("NSAutoreleaseFreedObjectCheckEnabled")) {
-		DDLogWarn(@"NSZombieEnabled / NSAutoreleaseFreedObjectCheckEnabled enabled! Disable for release.");
-	}
-
+    DDLogWarn(@"NSZombieEnabled / NSAutoreleaseFreedObjectCheckEnabled enabled! Disable for release.");
+  }
+  
   // Add the navigation controller's view to the window and display.
   RootViewController *rootController = [[[RootViewController alloc] initWithStyle:UITableViewStylePlain] autorelease];
   navigationController_ = [[UINavigationController alloc] initWithRootViewController:rootController];
   window_ = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
   [window_ addSubview:self.navigationController.view];
   [window_ makeKeyAndVisible];
-
+  
   // fade animation!
 #ifdef kIntroFadeAnimation
   splashView_ = [[UIImageView alloc] initWithFrame:CGRectMake(0,0, 320, 480)];
@@ -114,15 +114,14 @@
   [UIView setAnimationDelegate:self];
   [UIView setAnimationDidStopSelector:@selector(startupAnimationDone:finished:context:)];
   splashView_.alpha = 0.0;
-  //splashView.frame = CGRectMake(-60, -60, 440, 600);
   [UIView commitAnimations];
 #endif
-
+  
 #if !defined (APPSTORE)
   DDLogInfo(@"Autoupdate is enabled.");
   [[BWHockeyController sharedHockeyController] setBetaURL:kBetaDistributionUrl];
 #endif
-
+  
   return YES;
 }
 
@@ -153,9 +152,6 @@
 #pragma mark Memory management
 
 - (void)applicationDidReceiveMemoryWarning:(UIApplication *)application {
-  /*
-   Free up as much memory as possible by purging cached data objects that can be recreated (or reloaded from disk) later.
-   */
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
