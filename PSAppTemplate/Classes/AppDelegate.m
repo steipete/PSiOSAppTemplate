@@ -94,7 +94,7 @@
   RootViewController *rootController = [[[RootViewController alloc] initWithStyle:UITableViewStylePlain] autorelease];
   navigationController_ = [[UINavigationController alloc] initWithRootViewController:rootController];
   window_ = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-  [window_ addSubview:self.navigationController.view];
+  window_.rootViewController = navigationController_;
   [window_ makeKeyAndVisible];
   
   // fade animation!
