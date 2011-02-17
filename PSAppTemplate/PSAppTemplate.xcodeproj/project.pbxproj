@@ -41,6 +41,7 @@
 		7856A45312B4445C0025424F /* CrashReportSender.m in Sources */ = {isa = PBXBuildFile; fileRef = 7856A44E12B4445C0025424F /* CrashReportSender.m */; };
 		7856A45412B4445C0025424F /* CrashReporter.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7856A44F12B4445C0025424F /* CrashReporter.strings */; };
 		7856A47F12B444AD0025424F /* libPSFoundation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7856A47E12B444A80025424F /* libPSFoundation.a */; };
+		787251E3130DABF700571A6E /* lolcat.png in Resources */ = {isa = PBXBuildFile; fileRef = 787251E2130DABF700571A6E /* lolcat.png */; };
 		787BC4F612DB0C6E008DC03C /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 787BC4F512DB0C6E008DC03C /* JSONKit.m */; };
 		78BCB99112B524440093AE0C /* BWWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78BCB97312B524430093AE0C /* BWWebViewController.m */; };
 		78BCB99212B524440093AE0C /* Hockey.strings in Resources */ = {isa = PBXBuildFile; fileRef = 78BCB97512B524430093AE0C /* Hockey.strings */; };
@@ -109,7 +110,7 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = 7856A47312B444A80025424F /* PSFoundation.xcodeproj */;
 			proxyType = 1;
-			remoteGlobalIDString = 788E1E6D126C95B1009801E5 /* PSFoundation */;
+			remoteGlobalIDString = 788E1E6D126C95B1009801E5;
 			remoteInfo = PSFoundation;
 		};
 /* End PBXContainerItemProxy section */
@@ -144,12 +145,14 @@
 		7856A45112B4445C0025424F /* German */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = German; path = German.lproj/CrashReporter.strings; sourceTree = "<group>"; };
 		7856A46412B444640025424F /* README.mdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README.mdown; path = ../README.mdown; sourceTree = SOURCE_ROOT; };
 		7856A47312B444A80025424F /* PSFoundation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PSFoundation.xcodeproj; path = ../PSFoundation/PSFoundation.xcodeproj; sourceTree = SOURCE_ROOT; };
+		787251DE130DABEE00571A6E /* Build-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Build-Info.plist"; sourceTree = "<group>"; };
+		787251DF130DABEE00571A6E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		787251E2130DABF700571A6E /* lolcat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lolcat.png; path = Images/lolcat.png; sourceTree = "<group>"; };
 		7876F54C130D856A00A79E01 /* appstore.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = appstore.xcconfig; sourceTree = "<group>"; };
 		7876F54D130D856A00A79E01 /* appversion.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = appversion.xcconfig; sourceTree = "<group>"; };
 		7876F54E130D856A00A79E01 /* buildnumber.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = buildnumber.xcconfig; sourceTree = "<group>"; };
 		7876F54F130D856A00A79E01 /* debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = debug.xcconfig; sourceTree = "<group>"; };
 		7876F550130D856A00A79E01 /* distribution.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = distribution.xcconfig; sourceTree = "<group>"; };
-		7876F55D130D85E600A79E01 /* PSAppTemplate-Build-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "PSAppTemplate-Build-Info.plist"; sourceTree = "<group>"; };
 		787BC4F412DB0C6E008DC03C /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSONKit.h; path = ../JSONKit/JSONKit.h; sourceTree = SOURCE_ROOT; };
 		787BC4F512DB0C6E008DC03C /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSONKit.m; path = ../JSONKit/JSONKit.m; sourceTree = SOURCE_ROOT; };
 		78BCB97212B524430093AE0C /* BWWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BWWebViewController.h; sourceTree = "<group>"; };
@@ -214,7 +217,6 @@
 		78E9B2AB12B4575200B32768 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = Images/Icon.png; sourceTree = "<group>"; };
 		78E9B2AC12B4575200B32768 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "Images/Icon@2x.png"; sourceTree = "<group>"; };
 		78E9B2AD12B4575200B32768 /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; name = iTunesArtwork; path = Images/iTunesArtwork; sourceTree = "<group>"; };
-		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -298,13 +300,10 @@
 				78E9B2AA12B4575200B32768 /* Icon-Small@2x.png */,
 				78E9B2AB12B4575200B32768 /* Icon.png */,
 				78E9B2AC12B4575200B32768 /* Icon@2x.png */,
+				787251DE130DABEE00571A6E /* Build-Info.plist */,
+				787251DF130DABEE00571A6E /* Info.plist */,
+				787251E2130DABF700571A6E /* lolcat.png */,
 				78E9B2AD12B4575200B32768 /* iTunesArtwork */,
-<<<<<<< HEAD
-				8D1107310486CEB800E47090 /* PSAppTemplate-Info.plist */,
-				7876F55D130D85E600A79E01 /* PSAppTemplate-Build-Info.plist */,
-=======
-				8D1107310486CEB800E47090 /* Info.plist */,
->>>>>>> 3fdc26e50dc2dfaa5549438eb82f6f6c8800c53f
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -619,6 +618,7 @@
 				78BCB99212B524440093AE0C /* Hockey.strings in Resources */,
 				78BCB99312B524440093AE0C /* Hockey.strings in Resources */,
 				78BCBB2A12B5323D0093AE0C /* Localizable.strings in Resources */,
+				787251E3130DABF700571A6E /* lolcat.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -649,7 +649,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "#!/bin/sh\n\n# This has to match the name of the configuration you use for Ad-Hoc builds!\nadHocConfigurationName=\"Configuration_Distribution\";\n\nexecutableName=\"AppTemplate\";\nbundleDisplayName=\"AppTemplate\";\n\nsymbolicationDirectoryPath=\"${PROJECT_DIR}/../Development\";\n\nsftpServerDirectoryPath=\"yourserver.com:/var/www/your-path-to-hockey/hockey/public/app-identifer\";\n\n\nif ([ \"${EFFECTIVE_PLATFORM_NAME}\" == \"-iphoneos\" ])\nthen\n\t\n\tapplicationPath=\"${CONFIGURATION_BUILD_DIR}/$executableName.app\";\n\tbundleVersion=$(defaults read \"$applicationPath/Info\" CFBundleVersion);\n\tbundleIdentifier=$(defaults read \"$applicationPath/Info\" CFBundleIdentifier);\n\t\n\t# Move .app file to a secure location\n  \tif !([ -e \"$symbolicationDirectoryPath/$executableName.$bundleIdentifier.$bundleVersion.app\" ])\n     then\n\n\t\techo \"Copying $applicationPath to $symbolicationDirectoryPath...\";\n       \tcp -r $applicationPath $symbolicationDirectoryPath;\n\t\tmv \"$symbolicationDirectoryPath/$executableName.app\" \"$symbolicationDirectoryPath/$executableName.$bundleIdentifier.$bundleVersion.app\";\n\t\t\n     fi\n\n\t# Move .app.dSYM file to a secure location\n\tif !([ -e \"$symbolicationDirectoryPath/$executableName.$bundleIdentifier.$bundleVersion.app.dSYM\" ])\n  \t   then\n\n       \tcp -r \"$applicationPath.dSYM\" $symbolicationDirectoryPath;\n\t\tmv \"$symbolicationDirectoryPath/$executableName.app.dSYM\" \"$symbolicationDirectoryPath/$executableName.$bundleIdentifier.$bundleVersion.app.dSYM\";\n\t\t\n     fi\n\n\n\tif ([ \"${BUILD_STYLE}\" == $adHocConfigurationName ])\n\tthen\n\t\tcd \"${CONFIGURATION_BUILD_DIR}\";\n\n\t\t# Archive the application for Ad-Hoc distribution\n\t\tmkdir \"${CONFIGURATION_BUILD_DIR}/Payload\";\n\t\tcp -r $applicationPath \"${CONFIGURATION_BUILD_DIR}/Payload\";\n\t\t(zip -qr \"$executableName.ipa\" Payload);\n\t\trm -rf \"${CONFIGURATION_BUILD_DIR}/Payload\";\n\t\t\n\t\t# Generate .plist file for wireless app distribution\n\t\techo \"<?xml version=\\\"1.0\\\" encoding=\\\"UTF-8\\\"?>\n\t\t \t <!DOCTYPE plist PUBLIC \\\"-//Apple//DTD PLIST 1.0//EN\\\" \\\"http://www.apple.com/DTDs/PropertyList-1.0.dtd\\\">\n\t\t\t <plist version=\\\"1.0\\\">\n\t\t\t <dict>\n\t\t\t\t<key>items</key>\n\t\t\t\t<array>\n\t\t\t\t\t<dict>\n\t\t\t\t\t\t<key>assets</key>\n\t\t\t\t\t\t<array>\n\t\t\t\t\t\t\t<dict>\n\t\t\t\t\t\t\t\t<key>kind</key>\n\t\t\t\t\t\t\t\t<string>software-package</string>\n\t\t\t\t\t\t\t\t<key>url</key>\n\t\t\t\t\t\t\t\t<string>__URL__</string>\n\t\t\t\t\t\t\t</dict>\n\t\t\t\t\t\t</array>\n\t\t\t\t\t\t<key>metadata</key>\n\t\t\t\t\t\t<dict>\n\t\t\t\t\t\t\t<key>bundle-identifier</key>\n\t\t\t\t\t\t\t<string>$bundleIdentifier</string>\n\t\t\t\t\t\t\t<key>bundle-version</key>\n\t\t\t\t\t\t\t<string>$bundleVersion</string>\n\t\t\t\t\t\t\t<key>kind</key>\n\t\t\t\t\t\t\t<string>software</string>\n\t\t\t\t\t\t\t<key>title</key>\n\t\t\t\t\t\t\t<string>$bundleDisplayName</string>\n\t\t\t\t\t\t</dict>\n\t\t\t\t\t</dict>\n\t\t\t\t</array>\n\t\t\t </dict>\n\t\t\t </plist>\" > \"${CONFIGURATION_BUILD_DIR}/$executableName.plist\";\n\t\t\n\t\t# Move the archived application to Dropbox\n\t\t# cp \"$executableName.ipa\" \"$dropboxDistributionDirectoryPath/$executableName.ipa\";\n\n\t\t# Open Terminal and upload the .ipa and .plist files\n\t\techo \"Uploading $executableName.ipa and $executableName.plist to $sftpServerDirectoryPath...\";\n\t\t/usr/bin/osascript <<-EOF\t\t\t\n\t\t\ton isApplicationRunning(application)\n\t\t\t\ttell application \"System Events\" to (name of processes) contains application\n\t\t\tend isApplicationRunning\n\n\t\t\tif not (isApplicationRunning(\"Terminal\")) then\n\t\t\t\ttell application \"Terminal\"\n\t\t\t\t\tlaunch\n\t\t\t\t\tclose window 1\n\t\t\t\tend tell\n\t\t\tend if\n\n\t\t\ttell application \"Terminal\"\n\t\t\t\tdo script with command \"scp \\\"${CONFIGURATION_BUILD_DIR}/$executableName.ipa\\\" \\\"$sftpServerDirectoryPath/$executableName.ipa\\\"\"\n\t\t\t\tdo script with command \"scp \\\"${CONFIGURATION_BUILD_DIR}/$executableName.plist\\\" \\\"$sftpServerDirectoryPath/$executableName.plist\\\"\"\n\t\t\t\tdo script with command \"scp \\\"${PROJECT_DIR}/../ReleaseNotes.html\\\" \\\"$sftpServerDirectoryPath/ReleaseNotes.html\\\"\"\n\t\t\t\tdo script with command \"scp \\\"${PROJECT_DIR}/../AdHoc.mobileprovision\\\" \\\"$sftpServerDirectoryPath/PlanetRomeo_AdHoc.mobileprovision\\\"\"\n\t\t\tend tell\n\t\tEOF\n\n\t\tcd \"${PROJECT_DIR}\";\n\tfi\nfi\n\nexit 0;";
+			shellScript = "#!/bin/sh\n\n# This has to match the name of the configuration you use for Ad-Hoc builds!\nadHocConfigurationName=\"Distribution\"\nadHocCertificate=\"iPhone Distribution: Peter Steinberger\"\nprovisioningProfilePath=\"/Users/steipete/Library/MobileDevice/Provisioning Profiles/772FFDBF-009F-497C-A043-0B354575D189.mobileprovision\"\n\nexecutableName=\"AppTemplate\"\nbundleDisplayName=\"AppTemplate\"\n\narchiveDirectoryPath=\"${PROJECT_DIR}/Releases/Beta\";\ndropboxDistributionDirectoryPath=\"\";\n\nuploadMethod=\"scp\"\n\nsecretSubDirStart='apptmpl'\n\nscpUser=\"steipete\"\nscpHost=\"petersteinberger.com\"\nscpPath=\"/var/www/pstein/blog/appstore\"\n\napplicationPath=\"${CONFIGURATION_BUILD_DIR}/$executableName.app\"\n\necho ${EFFECTIVE_PLATFORM_NAME}\necho ${BUILD_STYLE}\necho $applicationPath\n\nif [[ \"${EFFECTIVE_PLATFORM_NAME}\" == \"-iphoneos\" && \"${BUILD_STYLE}\" == $adHocConfigurationName && -e $applicationPath ]]\nthen\n    bundleVersion=$(defaults read \"$applicationPath/Info\" CFBundleVersion)\n    bundleIdentifier=$(defaults read \"$applicationPath/Info\" CFBundleIdentifier)\n    bundleShortVersionString=$(defaults read \"$applicationPath/Info\" CFBundleShortVersionString)\n    \n    # Zip the app and dSYM\n    zipPath=\"${CONFIGURATION_BUILD_DIR}/$executableName $bundleVersion.zip\"\n    \n    zip -qr \"${CONFIGURATION_BUILD_DIR}/$executableName $bundleVersion.zip\" . -i ${CONFIGURATION_BUILD_DIR}/$executableName.app ${CONFIGURATION_BUILD_DIR}/$executableName.app.dSYM\n    \n    # Move new archive\n    if !([ -e \"$archiveDirectoryPath/$bundleIdentifier $bundleVersion.zip\" ])\n    then\n        mv \"$zipPath\" \"$archiveDirectoryPath\";\n    fi\n    \n    cd \"${CONFIGURATION_BUILD_DIR}\"\n\n    # Archive the application for Ad-Hoc distribution\n    /usr/bin/xcrun -sdk iphoneos PackageApplication \"$executableName.app\" -o \"${CONFIGURATION_BUILD_DIR}/$executableName.ipa\" --sign \"$adHocCertificate\" --embed \"$provisioningProfilePath\"\n    \n    # Generate .plist file for wireless app distribution\n    echo \"<?xml version=\\\"1.0\\\" encoding=\\\"UTF-8\\\"?>\n         <!DOCTYPE plist PUBLIC \\\"-//Apple//DTD PLIST 1.0//EN\\\" \\\"http://www.apple.com/DTDs/PropertyList-1.0.dtd\\\">\n         <plist version=\\\"1.0\\\">\n         <dict>\n            <key>items</key>\n            <array>\n                <dict>\n                    <key>assets</key>\n                    <array>\n                        <dict>\n                            <key>kind</key>\n                            <string>software-package</string>\n                            <key>url</key>\n                            <string>__URL__</string>\n                        </dict>\n                    </array>\n                    <key>metadata</key>\n                    <dict>\n                        <key>bundle-identifier</key>\n                        <string>$bundleIdentifier</string>\n                        <key>bundle-version</key>\n                        <string>$bundleVersion</string>\n                        <key>kind</key>\n                        <string>software</string>\n                        <key>title</key>\n                        <string>$bundleDisplayName</string>\n                        <key>subtitle</key>\n                        <string>$bundleShortVersionString</string>\n                    </dict>\n                </dict>\n            </array>\n         </dict>\n         </plist>\" > \"${CONFIGURATION_BUILD_DIR}/$executableName.plist\";\n    \n    # Move the archived application to Dropbox\n    cp \"$executableName.ipa\" \"$dropboxDistributionDirectoryPath/$executableName.ipa\";\n    \n    # Open Terminal and upload the .ipa and .plist files\n    if ([ \"$uploadMethod\" == \"ftp\" ])\n    then\n        echo \"Uploading $executableName.ipa and $executableName.plist to $ftpServerDirectoryPath...\";\n        \n        /usr/bin/osascript <<-EOF           \non isApplicationRunning(application)\ntell application \"System Events\" to (name of processes) contains application\nend isApplicationRunning\n\nif not (isApplicationRunning(\"Terminal\")) then\ntell application \"Terminal\"\n    launch\n    close window 1\nend tell\nend if\n\ntell application \"Terminal\"\ndo script with command \"curl -T \\\"${CONFIGURATION_BUILD_DIR}/$executableName.ipa\\\" -u $ftpUsername:$ftpPassword \\\"ftp://$ftpServerDirectoryPath/$bundleIdentifier/$executableName.ipa\\\"\"\ndo script with command \"curl -T \\\"${CONFIGURATION_BUILD_DIR}/$executableName.plist\\\" -u $ftpUsername:$ftpPassword \\\"ftp://$ftpServerDirectoryPath/$bundleIdentifier/$executableName.plist\\\"\"\nend tell\nEOF\n    elif [[ \"$uploadMethod\" == \"scp\" ]]\n    then\n        echo \"Uploading $executableName.ipa and $executableName.plist to $scpHost...\";\n        ssh $scpUser@$scpHost \"mkdir $scpPath/$bundleIdentifier/$secretSubDirStart$bundleVersion/\"\n        scp \"${CONFIGURATION_BUILD_DIR}/$executableName.ipa\" $scpUser@$scpHost:\"$scpPath/$bundleIdentifier/$secretSubDirStart$bundleVersion/\"\n        scp \"${CONFIGURATION_BUILD_DIR}/$executableName.plist\" $scpUser@$scpHost:\"$scpPath/$bundleIdentifier/$secretSubDirStart$bundleVersion/\"\n        scp \"${PROJECT_DIR}/../ReleaseNotes.html\" $scpUser@$scpHost:\"$scpPath/$bundleIdentifier/$secretSubDirStart$bundleVersion/\"\n    fi\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -752,11 +752,7 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = PSAppTemplate_Prefix.pch;
-<<<<<<< HEAD
 				INFOPLIST_FILE = "PSAppTemplate-Build-Info.plist";
-=======
-				INFOPLIST_FILE = Info.plist;
->>>>>>> 3fdc26e50dc2dfaa5549438eb82f6f6c8800c53f
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../Flurry/iPhone v2.7 (build 42)/FlurryLib\"",
@@ -776,11 +772,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = PSAppTemplate_Prefix.pch;
-<<<<<<< HEAD
 				INFOPLIST_FILE = "PSAppTemplate-Build-Info.plist";
-=======
-				INFOPLIST_FILE = Info.plist;
->>>>>>> 3fdc26e50dc2dfaa5549438eb82f6f6c8800c53f
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../Flurry/iPhone v2.7 (build 42)/FlurryLib\"",
@@ -837,7 +829,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = PSAppTemplate_Prefix.pch;
-				INFOPLIST_FILE = Info.plist;
+				INFOPLIST_FILE = "PSAppTemplate-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../Flurry/iPhone v2.7 (build 42)/FlurryLib\"",
@@ -853,67 +845,21 @@
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
-<<<<<<< HEAD
 				PRODUCT_NAME = AdHocDistribute;
-=======
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/UIKit.framework/Headers/UIKit.h";
-				INFOPLIST_FILE = Info.plist;
-				INSTALL_PATH = "$(HOME)/Applications";
-				PREBINDING = NO;
-				PRODUCT_NAME = BetaDistribute;
-				SDKROOT = iphoneos;
->>>>>>> 3fdc26e50dc2dfaa5549438eb82f6f6c8800c53f
 			};
 			name = Debug;
 		};
 		7876F573130D869A00A79E01 /* Distribution */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-<<<<<<< HEAD
 				PRODUCT_NAME = AdHocDistribute;
-=======
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/UIKit.framework/Headers/UIKit.h";
-				INFOPLIST_FILE = Info.plist;
-				INSTALL_PATH = "$(HOME)/Applications";
-				OTHER_LDFLAGS = (
-					"-framework",
-					Foundation,
-					"-framework",
-					UIKit,
-				);
-				PREBINDING = NO;
-				PRODUCT_NAME = BetaDistribute;
-				SDKROOT = iphoneos;
->>>>>>> 3fdc26e50dc2dfaa5549438eb82f6f6c8800c53f
 			};
 			name = Distribution;
 		};
 		7876F574130D869A00A79E01 /* AppStore */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-<<<<<<< HEAD
 				PRODUCT_NAME = AdHocDistribute;
-=======
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/UIKit.framework/Headers/UIKit.h";
-				INFOPLIST_FILE = Info.plist;
-				INSTALL_PATH = "$(HOME)/Applications";
-				OTHER_LDFLAGS = (
-					"-framework",
-					Foundation,
-					"-framework",
-					UIKit,
-				);
-				PREBINDING = NO;
-				PRODUCT_NAME = BetaDistribute;
-				SDKROOT = iphoneos;
->>>>>>> 3fdc26e50dc2dfaa5549438eb82f6f6c8800c53f
 			};
 			name = AppStore;
 		};
@@ -942,7 +888,10 @@
 				GCC_WARN_UNUSED_LABEL = YES;
 				GCC_WARN_UNUSED_VALUE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = "../PSFoundation/**";
+				HEADER_SEARCH_PATHS = (
+					"../TapkuLibrary/**",
+					"../PSFoundation/**",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				OTHER_LDFLAGS = "-all_load";
 				PREBINDING = NO;
@@ -981,7 +930,6 @@
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				OTHER_LDFLAGS = "-all_load";
 				PREBINDING = NO;
-				RUN_CLANG_STATIC_ANALYZER = YES;
 				SDKROOT = iphoneos;
 			};
 			name = Distribution;
