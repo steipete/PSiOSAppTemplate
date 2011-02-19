@@ -14,7 +14,7 @@
 				7876F578130D86A600A79E01 /* ShellScript */,
 			);
 			dependencies = (
-				7876F576130D869D00A79E01 /* PBXTargetDependency */,
+				78F938DC130DD147008FA485 /* PBXTargetDependency */,
 			);
 			name = AdHocDistribute;
 			productName = AdHocDistribute;
@@ -41,7 +41,6 @@
 		7856A45312B4445C0025424F /* CrashReportSender.m in Sources */ = {isa = PBXBuildFile; fileRef = 7856A44E12B4445C0025424F /* CrashReportSender.m */; };
 		7856A45412B4445C0025424F /* CrashReporter.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7856A44F12B4445C0025424F /* CrashReporter.strings */; };
 		7856A47F12B444AD0025424F /* libPSFoundation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7856A47E12B444A80025424F /* libPSFoundation.a */; };
-		787251E3130DABF700571A6E /* lolcat.png in Resources */ = {isa = PBXBuildFile; fileRef = 787251E2130DABF700571A6E /* lolcat.png */; };
 		787BC4F612DB0C6E008DC03C /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 787BC4F512DB0C6E008DC03C /* JSONKit.m */; };
 		78BCBB2A12B5323D0093AE0C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 78BCBB2712B5323D0093AE0C /* Localizable.strings */; };
 		78DA44DF130DAFE700D1585D /* NSString+HockeyAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 78DA44CD130DAFE700D1585D /* NSString+HockeyAdditions.m */; };
@@ -54,6 +53,7 @@
 		78DA44E6130DAFE700D1585D /* BWHockeyManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 78DA44DB130DAFE700D1585D /* BWHockeyManager.m */; };
 		78DA44E7130DAFE700D1585D /* BWHockeyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78DA44DD130DAFE700D1585D /* BWHockeyViewController.m */; };
 		78DA44E8130DAFE700D1585D /* Hockey.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 78DA44DE130DAFE700D1585D /* Hockey.bundle */; };
+		78DA473B130DD0ED00D1585D /* lolcat.png in Resources */ = {isa = PBXBuildFile; fileRef = 78DA473A130DD0ED00D1585D /* lolcat.png */; };
 		78E9B18D12B449B800B32768 /* libFlurry.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 78E9B18C12B449B800B32768 /* libFlurry.a */; };
 		78E9B1C312B44BB900B32768 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78E9B1C212B44BB900B32768 /* QuartzCore.framework */; };
 		78E9B21112B44D4300B32768 /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E9B20D12B44D4300B32768 /* RegexKitLite.m */; };
@@ -104,12 +104,12 @@
 			remoteGlobalIDString = 788E1E6D126C95B1009801E5;
 			remoteInfo = PSFoundation;
 		};
-		7876F575130D869D00A79E01 /* PBXContainerItemProxy */ = {
+		78F938DB130DD147008FA485 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 7856A47312B444A80025424F /* PSFoundation.xcodeproj */;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 788E1E6D126C95B1009801E5;
-			remoteInfo = PSFoundation;
+			remoteGlobalIDString = 1D6058900D05DD3D006BFB54;
+			remoteInfo = PSAppTemplate;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -145,7 +145,6 @@
 		7856A47312B444A80025424F /* PSFoundation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PSFoundation.xcodeproj; path = ../PSFoundation/PSFoundation.xcodeproj; sourceTree = SOURCE_ROOT; };
 		787251DE130DABEE00571A6E /* Build-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Build-Info.plist"; sourceTree = "<group>"; };
 		787251DF130DABEE00571A6E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		787251E2130DABF700571A6E /* lolcat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lolcat.png; path = Images/lolcat.png; sourceTree = "<group>"; };
 		7876F54C130D856A00A79E01 /* appstore.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = appstore.xcconfig; sourceTree = "<group>"; };
 		7876F54D130D856A00A79E01 /* appversion.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = appversion.xcconfig; sourceTree = "<group>"; };
 		7876F54E130D856A00A79E01 /* buildnumber.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = buildnumber.xcconfig; sourceTree = "<group>"; };
@@ -174,6 +173,7 @@
 		78DA44DC130DAFE700D1585D /* BWHockeyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BWHockeyViewController.h; path = ../HockeyPlus/client/iOS/BWHockeyViewController.h; sourceTree = SOURCE_ROOT; };
 		78DA44DD130DAFE700D1585D /* BWHockeyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BWHockeyViewController.m; path = ../HockeyPlus/client/iOS/BWHockeyViewController.m; sourceTree = SOURCE_ROOT; };
 		78DA44DE130DAFE700D1585D /* Hockey.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Hockey.bundle; path = ../HockeyPlus/client/iOS/Hockey.bundle; sourceTree = SOURCE_ROOT; };
+		78DA473A130DD0ED00D1585D /* lolcat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lolcat.png; path = Images/lolcat.png; sourceTree = "<group>"; };
 		78E9B16812B4468E00B32768 /* PSDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSDefines.h; sourceTree = "<group>"; };
 		78E9B18A12B449B800B32768 /* FlurryAdDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlurryAdDelegate.h; sourceTree = "<group>"; };
 		78E9B18B12B449B800B32768 /* FlurryAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlurryAPI.h; sourceTree = "<group>"; };
@@ -293,8 +293,8 @@
 				78E9B2AB12B4575200B32768 /* Icon.png */,
 				78E9B2AC12B4575200B32768 /* Icon@2x.png */,
 				787251DE130DABEE00571A6E /* Build-Info.plist */,
+				78DA473A130DD0ED00D1585D /* lolcat.png */,
 				787251DF130DABEE00571A6E /* Info.plist */,
-				787251E2130DABF700571A6E /* lolcat.png */,
 				78E9B2AD12B4575200B32768 /* iTunesArtwork */,
 			);
 			name = Resources;
@@ -566,8 +566,8 @@
 				78E9B2B312B4575200B32768 /* Icon@2x.png in Resources */,
 				78E9B2B412B4575200B32768 /* iTunesArtwork in Resources */,
 				78BCBB2A12B5323D0093AE0C /* Localizable.strings in Resources */,
-				787251E3130DABF700571A6E /* lolcat.png in Resources */,
 				78DA44E8130DAFE700D1585D /* Hockey.bundle in Resources */,
+				78DA473B130DD0ED00D1585D /* lolcat.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -585,7 +585,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# increase build number for beta builds\nif [ \"$CONFIGURATION\" == \"Distribution\" ]\n\tthen /usr/bin/perl -pe 's/(BUILD_NUMBER = )(\\d+)/$1.($2+1)/eg' -i ../XCode/buildnumber.xcconfig\nfi";
+			shellScript = "# increase build number for beta builds\nif [ \"$CONFIGURATION\" == \"Distribution\" ]\n\tthen /usr/bin/perl -pe 's/(BUILD_NUMBER = )(\\d+)/$1.($2+1)/eg' -i ../Xcode/buildnumber.xcconfig\nfi";
 		};
 		7876F578130D86A600A79E01 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -642,10 +642,10 @@
 			name = PSFoundation;
 			targetProxy = 7856A48012B444B10025424F /* PBXContainerItemProxy */;
 		};
-		7876F576130D869D00A79E01 /* PBXTargetDependency */ = {
+		78F938DC130DD147008FA485 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = PSFoundation;
-			targetProxy = 7876F575130D869D00A79E01 /* PBXContainerItemProxy */;
+			target = 1D6058900D05DD3D006BFB54 /* PSAppTemplate */;
+			targetProxy = 78F938DB130DD147008FA485 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -755,6 +755,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
+				DEPLOYMENT_POSTPROCESSING = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/..\"",
@@ -767,6 +768,7 @@
 					"\"$(SRCROOT)/../Flurry/iPhone v2.7 (build 42)/FlurryLib\"",
 				);
 				PRODUCT_NAME = AppTemplate;
+				STRIP_INSTALLED_PRODUCT = YES;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = AppStore;
