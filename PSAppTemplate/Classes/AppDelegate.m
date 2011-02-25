@@ -42,7 +42,7 @@
 #endif
 }
 
-- (void)appplicationWillSuspend:(UIApplication *)application {
+- (void)appplicationPrepareForBackgroundOrTermination:(UIApplication *)application {
   DDLogInfo(@"detected application termination.");
   
   // post notification to all listeners
@@ -128,7 +128,7 @@
 
 
 - (void)applicationDidEnterBackground:(UIApplication *)application {
-  [self appplicationWillSuspend:application];
+  [self appplicationPrepareForBackgroundOrTermination:application];
 }
 
 
@@ -141,7 +141,7 @@
 
 
 - (void)applicationWillTerminate:(UIApplication *)application {
-  [self appplicationWillSuspend:application];
+  [self appplicationPrepareForBackgroundOrTermination:application];
 }
 
 
