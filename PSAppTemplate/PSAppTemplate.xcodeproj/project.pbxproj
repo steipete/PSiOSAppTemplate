@@ -42,6 +42,8 @@
 		7856A45412B4445C0025424F /* CrashReporter.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7856A44F12B4445C0025424F /* CrashReporter.strings */; };
 		7856A47F12B444AD0025424F /* libPSFoundation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7856A47E12B444A80025424F /* libPSFoundation.a */; };
 		787BC4F612DB0C6E008DC03C /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 787BC4F512DB0C6E008DC03C /* JSONKit.m */; };
+		7882E0CC1325001B00BE7370 /* Build-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7882E0CA1325001B00BE7370 /* Build-Info.plist */; };
+		7882E0CD1325001B00BE7370 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7882E0CB1325001B00BE7370 /* Info.plist */; };
 		78BCB99112B524440093AE0C /* BWWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78BCB97312B524430093AE0C /* BWWebViewController.m */; };
 		78BCB99212B524440093AE0C /* Hockey.strings in Resources */ = {isa = PBXBuildFile; fileRef = 78BCB97512B524430093AE0C /* Hockey.strings */; };
 		78BCB99312B524440093AE0C /* Hockey.strings in Resources */ = {isa = PBXBuildFile; fileRef = 78BCB97812B524430093AE0C /* Hockey.strings */; };
@@ -109,7 +111,7 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = 7856A47312B444A80025424F /* PSFoundation.xcodeproj */;
 			proxyType = 1;
-			remoteGlobalIDString = 788E1E6D126C95B1009801E5 /* PSFoundation */;
+			remoteGlobalIDString = 788E1E6D126C95B1009801E5;
 			remoteInfo = PSFoundation;
 		};
 /* End PBXContainerItemProxy section */
@@ -149,9 +151,10 @@
 		7876F54E130D856A00A79E01 /* buildnumber.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = buildnumber.xcconfig; sourceTree = "<group>"; };
 		7876F54F130D856A00A79E01 /* debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = debug.xcconfig; sourceTree = "<group>"; };
 		7876F550130D856A00A79E01 /* distribution.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = distribution.xcconfig; sourceTree = "<group>"; };
-		7876F55D130D85E600A79E01 /* PSAppTemplate-Build-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "PSAppTemplate-Build-Info.plist"; sourceTree = "<group>"; };
 		787BC4F412DB0C6E008DC03C /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSONKit.h; path = ../JSONKit/JSONKit.h; sourceTree = SOURCE_ROOT; };
 		787BC4F512DB0C6E008DC03C /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSONKit.m; path = ../JSONKit/JSONKit.m; sourceTree = SOURCE_ROOT; };
+		7882E0CA1325001B00BE7370 /* Build-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Build-Info.plist"; sourceTree = "<group>"; };
+		7882E0CB1325001B00BE7370 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		78BCB97212B524430093AE0C /* BWWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BWWebViewController.h; sourceTree = "<group>"; };
 		78BCB97312B524430093AE0C /* BWWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BWWebViewController.m; sourceTree = "<group>"; };
 		78BCB97612B524430093AE0C /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = Hockey.strings; sourceTree = "<group>"; };
@@ -214,7 +217,6 @@
 		78E9B2AB12B4575200B32768 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = Images/Icon.png; sourceTree = "<group>"; };
 		78E9B2AC12B4575200B32768 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "Images/Icon@2x.png"; sourceTree = "<group>"; };
 		78E9B2AD12B4575200B32768 /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; name = iTunesArtwork; path = Images/iTunesArtwork; sourceTree = "<group>"; };
-		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -299,12 +301,8 @@
 				78E9B2AB12B4575200B32768 /* Icon.png */,
 				78E9B2AC12B4575200B32768 /* Icon@2x.png */,
 				78E9B2AD12B4575200B32768 /* iTunesArtwork */,
-<<<<<<< HEAD
-				8D1107310486CEB800E47090 /* PSAppTemplate-Info.plist */,
-				7876F55D130D85E600A79E01 /* PSAppTemplate-Build-Info.plist */,
-=======
-				8D1107310486CEB800E47090 /* Info.plist */,
->>>>>>> 3fdc26e50dc2dfaa5549438eb82f6f6c8800c53f
+				7882E0CA1325001B00BE7370 /* Build-Info.plist */,
+				7882E0CB1325001B00BE7370 /* Info.plist */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -619,6 +617,8 @@
 				78BCB99212B524440093AE0C /* Hockey.strings in Resources */,
 				78BCB99312B524440093AE0C /* Hockey.strings in Resources */,
 				78BCBB2A12B5323D0093AE0C /* Localizable.strings in Resources */,
+				7882E0CC1325001B00BE7370 /* Build-Info.plist in Resources */,
+				7882E0CD1325001B00BE7370 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -752,11 +752,7 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = PSAppTemplate_Prefix.pch;
-<<<<<<< HEAD
-				INFOPLIST_FILE = "PSAppTemplate-Build-Info.plist";
-=======
-				INFOPLIST_FILE = Info.plist;
->>>>>>> 3fdc26e50dc2dfaa5549438eb82f6f6c8800c53f
+				INFOPLIST_FILE = "Build-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../Flurry/iPhone v2.7 (build 42)/FlurryLib\"",
@@ -776,11 +772,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = PSAppTemplate_Prefix.pch;
-<<<<<<< HEAD
-				INFOPLIST_FILE = "PSAppTemplate-Build-Info.plist";
-=======
-				INFOPLIST_FILE = Info.plist;
->>>>>>> 3fdc26e50dc2dfaa5549438eb82f6f6c8800c53f
+				INFOPLIST_FILE = "Build-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../Flurry/iPhone v2.7 (build 42)/FlurryLib\"",
@@ -822,6 +814,7 @@
 				PREBINDING = NO;
 				RUN_CLANG_STATIC_ANALYZER = YES;
 				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = AppStore;
@@ -853,67 +846,21 @@
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
-<<<<<<< HEAD
 				PRODUCT_NAME = AdHocDistribute;
-=======
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/UIKit.framework/Headers/UIKit.h";
-				INFOPLIST_FILE = Info.plist;
-				INSTALL_PATH = "$(HOME)/Applications";
-				PREBINDING = NO;
-				PRODUCT_NAME = BetaDistribute;
-				SDKROOT = iphoneos;
->>>>>>> 3fdc26e50dc2dfaa5549438eb82f6f6c8800c53f
 			};
 			name = Debug;
 		};
 		7876F573130D869A00A79E01 /* Distribution */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-<<<<<<< HEAD
 				PRODUCT_NAME = AdHocDistribute;
-=======
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/UIKit.framework/Headers/UIKit.h";
-				INFOPLIST_FILE = Info.plist;
-				INSTALL_PATH = "$(HOME)/Applications";
-				OTHER_LDFLAGS = (
-					"-framework",
-					Foundation,
-					"-framework",
-					UIKit,
-				);
-				PREBINDING = NO;
-				PRODUCT_NAME = BetaDistribute;
-				SDKROOT = iphoneos;
->>>>>>> 3fdc26e50dc2dfaa5549438eb82f6f6c8800c53f
 			};
 			name = Distribution;
 		};
 		7876F574130D869A00A79E01 /* AppStore */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-<<<<<<< HEAD
 				PRODUCT_NAME = AdHocDistribute;
-=======
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/UIKit.framework/Headers/UIKit.h";
-				INFOPLIST_FILE = Info.plist;
-				INSTALL_PATH = "$(HOME)/Applications";
-				OTHER_LDFLAGS = (
-					"-framework",
-					Foundation,
-					"-framework",
-					UIKit,
-				);
-				PREBINDING = NO;
-				PRODUCT_NAME = BetaDistribute;
-				SDKROOT = iphoneos;
->>>>>>> 3fdc26e50dc2dfaa5549438eb82f6f6c8800c53f
 			};
 			name = AppStore;
 		};
@@ -942,12 +889,16 @@
 				GCC_WARN_UNUSED_LABEL = YES;
 				GCC_WARN_UNUSED_VALUE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = "../PSFoundation/**";
+				HEADER_SEARCH_PATHS = (
+					"../TapkuLibrary/**",
+					"../PSFoundation/**",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				OTHER_LDFLAGS = "-all_load";
 				PREBINDING = NO;
 				RUN_CLANG_STATIC_ANALYZER = NO;
 				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -983,6 +934,7 @@
 				PREBINDING = NO;
 				RUN_CLANG_STATIC_ANALYZER = YES;
 				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Distribution;
 		};
