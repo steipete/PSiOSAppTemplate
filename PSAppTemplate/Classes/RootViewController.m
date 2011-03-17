@@ -7,6 +7,9 @@
 //
 
 #import "RootViewController.h"
+#import "JSONKit.h"
+#import "PSDefines.h"
+#import "RegexKitLite.h"
 
 #ifdef kUseAutoUpdater
 #import "BWHockeyManager.h"

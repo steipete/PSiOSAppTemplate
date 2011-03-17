@@ -6,6 +6,9 @@
 //  Template by Peter Steinberger
 //
 
+#import "PSFoundation.h"
+#import "BWHockeyManager.h"
+#import "PSDefines.h"
 #import "AppDelegate.h"
 #import "RootViewController.h"
 
