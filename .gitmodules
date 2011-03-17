@@ -10,3 +10,6 @@
 [submodule "JSONKit"]
 	path = JSONKit
 	url = https://github.com/johnezang/JSONKit.git
+[submodule "HockeyKit"]
+	path = HockeyKit
+	url = git://github.com/TheRealKerni/HockeyKit.git

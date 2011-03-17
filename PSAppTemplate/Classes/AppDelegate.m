@@ -6,12 +6,11 @@
 //  Template by Peter Steinberger
 //
 
+#import "PSFoundation.h"
+#import "BWHockeyManager.h"
+#import "PSDefines.h"
 #import "AppDelegate.h"
 #import "RootViewController.h"
-
-#if !defined (APPSTORE)
-#import "BWHockeyController.h"
-#endif
 
 #ifdef kUseFlurryStatistics
 #import "FlurryAPI.h"
@@ -46,7 +45,7 @@
 #endif
 }
 
-- (void)appplicationWillSuspend:(UIApplication *)application {
+- (void)appplicationPrepareForBackgroundOrTermination:(UIApplication *)application {
   DDLogInfo(@"detected application termination.");
   
   // post notification to all listeners
@@ -98,7 +97,7 @@
   RootViewController *rootController = [[[RootViewController alloc] initWithStyle:UITableViewStylePlain] autorelease];
   navigationController_ = [[UINavigationController alloc] initWithRootViewController:rootController];
   window_ = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-  [window_ addSubview:self.navigationController.view];
+  window_.rootViewController = navigationController_;
   [window_ makeKeyAndVisible];
   
   // fade animation!
@@ -119,7 +118,9 @@
   
 #if !defined (APPSTORE)
   DDLogInfo(@"Autoupdate is enabled.");
-  [[BWHockeyController sharedHockeyController] setBetaURL:kBetaDistributionUrl];
+  [BWHockeyManager sharedHockeyManager].updateURL = kHockeyUpdateDistributionUrl;
+  [BWHockeyManager sharedHockeyManager].delegate = self;
+  [BWHockeyManager sharedHockeyManager].alwaysShowUpdateReminder = YES;  
 #endif
   
   return YES;
@@ -130,7 +131,7 @@
 
 
 - (void)applicationDidEnterBackground:(UIApplication *)application {
-  [self appplicationWillSuspend:application];
+  [self appplicationPrepareForBackgroundOrTermination:application];
 }
 
 
@@ -143,7 +144,7 @@
 
 
 - (void)applicationWillTerminate:(UIApplication *)application {
-  [self appplicationWillSuspend:application];
+  [self appplicationPrepareForBackgroundOrTermination:application];
 }
 
 
@@ -156,9 +157,9 @@
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 #pragma mark -
-#pragma mark CrashReportSenderDelegate
+#pragma mark CrashReportSenderDelegate AND BWHockeyManagerDelegate
 
-#ifdef kUseCrashReporter
+#if defined(kUseCrashReporter) || defined(kUseAutoUpdater)
 - (void)connectionOpened {
   [[IKNetworkActivityManager sharedInstance] addNetworkUser:self];
 }
@@ -166,7 +167,9 @@
 - (void)connectionClosed {
   [[IKNetworkActivityManager sharedInstance] removeNetworkUser:self];
 }
+#endif
 
+#if defined(kUseCrashReporter)
 - (NSString *)crashReportDescription {
   NSString *deviceInfo = [UIDevice debugInfo];
   DDLogInfo(deviceInfo);

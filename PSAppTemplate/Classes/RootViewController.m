@@ -7,6 +7,13 @@
 //
 
 #import "RootViewController.h"
+#import "JSONKit.h"
+#import "PSDefines.h"
+#import "RegexKitLite.h"
+
+#ifdef kUseAutoUpdater
+#import "BWHockeyManager.h"
+#endif
 
 @interface RootViewController()
 // private stuff
@@ -24,7 +31,10 @@
 
 - (id)initWithStyle:(UITableViewStyle)style {
   if ((self = [super initWithStyle:style])) {
-    self.title = @"App Template";
+    NSString *versionString = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleVersion"];
+    NSString *shortVersionString = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"];
+    self.title = [NSString stringWithFormat:@"PSiOSAppTemplate %@ (%@)", shortVersionString, versionString];
+    
     self.useShadows = YES; // PSTableViewController
   }
   return self;
@@ -53,6 +63,10 @@
 
 - (void)viewDidAppear:(BOOL)animated {
   [super viewDidAppear:animated];
+  
+  UIImageView *lolcatImage = [UIImageView imageViewNamed:@"lolcat"];
+  lolcatImage.frame = CGRectMake(10, 100, 356*0.8, 512*0.8);
+//  [self.tableView addSubview:lolcatImage];
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
@@ -81,7 +95,7 @@
 
 // Customize the number of rows in the table view.
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-  return 1;
+  return 2;
 }
 
 
@@ -96,8 +110,15 @@
   }
 
 	// Configure the cell.
-  cell.textLabel.text = @"Hello World!";
+  if (indexPath.row == 0) {
+    cell.textLabel.text = @"PSAlertView - Test";
+  }else if (indexPath.row == 1) {
+    cell.textLabel.text = @"HockeyKitv2 AdHoc Update";
+    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+  }
 
+  cell.backgroundColor = [UIColor lightGrayColor];
+  
   return cell;
 }
 
@@ -142,12 +163,19 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
   [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
 
-  PSAlertView *blockAlert = [PSAlertView alertWithTitle:@"Hello World" message:@"This is a Alert with blocks!"];
-  [blockAlert addButtonWithTitle:@"Wow!" block:nil];
-  [blockAlert addButtonWithTitle:@"Cool!" block:^{
-    // do stuff on button press
-  }];
-  [blockAlert show];
+  if (indexPath.row == 0) {
+    PSAlertView *blockAlert = [PSAlertView alertWithTitle:@"Hello World" message:@"This is a Alert with blocks!"];
+    [blockAlert addButtonWithTitle:@"Wow!" block:nil];
+    [blockAlert addButtonWithTitle:@"Cool!" block:^{
+      // do stuff on button press
+    }];
+    [blockAlert show];
+  }else if (indexPath.row == 1) {
+#ifdef kUseAutoUpdater
+    BWHockeyViewController *hockeyViewController = [[BWHockeyManager sharedHockeyManager] hockeyViewController:NO];
+    [self.navigationController pushViewController:hockeyViewController animated:YES];
+#endif
+  }
 }
 
 

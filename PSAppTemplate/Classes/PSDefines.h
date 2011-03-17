@@ -20,7 +20,7 @@
 
 // keys & urls
 #ifndef APPSTORE
-  #define kBetaDistributionUrl @"http://yourserver.com/hockey/public/index.php"
+  #define kHockeyUpdateDistributionUrl @"http://petersteinberger.com/appstore"
 #endif
 
 #define kFlurryStatisticsKey @"INSERT_FLURRY_KEY"

@@ -14,7 +14,7 @@
 				7876F578130D86A600A79E01 /* ShellScript */,
 			);
 			dependencies = (
-				7876F576130D869D00A79E01 /* PBXTargetDependency */,
+				78F938DC130DD147008FA485 /* PBXTargetDependency */,
 			);
 			name = AdHocDistribute;
 			productName = AdHocDistribute;
@@ -42,6 +42,7 @@
 		7856A45412B4445C0025424F /* CrashReporter.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7856A44F12B4445C0025424F /* CrashReporter.strings */; };
 		7856A47F12B444AD0025424F /* libPSFoundation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7856A47E12B444A80025424F /* libPSFoundation.a */; };
 		787BC4F612DB0C6E008DC03C /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 787BC4F512DB0C6E008DC03C /* JSONKit.m */; };
+<<<<<<< HEAD
 		7882E0CC1325001B00BE7370 /* Build-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7882E0CA1325001B00BE7370 /* Build-Info.plist */; };
 		7882E0CD1325001B00BE7370 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7882E0CB1325001B00BE7370 /* Info.plist */; };
 		78BCB99112B524440093AE0C /* BWWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78BCB97312B524430093AE0C /* BWWebViewController.m */; };
@@ -56,7 +57,21 @@
 		78BCB99B12B524440093AE0C /* NSString+URLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 78BCB98B12B524440093AE0C /* NSString+URLEncoding.m */; };
 		78BCB99C12B524440093AE0C /* BWHockeyController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78BCB98E12B524440093AE0C /* BWHockeyController.m */; };
 		78BCB99D12B524440093AE0C /* BWHockeyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78BCB99012B524440093AE0C /* BWHockeyViewController.m */; };
+=======
+		7896675213322CC6004140D5 /* NSString+HockeyAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7896673E13322CC6004140D5 /* NSString+HockeyAdditions.m */; };
+		7896675313322CC6004140D5 /* PSAppStoreHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 7896674013322CC6004140D5 /* PSAppStoreHeader.m */; };
+		7896675413322CC6004140D5 /* PSStoreButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 7896674213322CC6004140D5 /* PSStoreButton.m */; };
+		7896675513322CC6004140D5 /* PSWebTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7896674413322CC6004140D5 /* PSWebTableViewCell.m */; };
+		7896675613322CC6004140D5 /* UIImage+HockeyAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7896674613322CC6004140D5 /* UIImage+HockeyAdditions.m */; };
+		7896675713322CC6004140D5 /* BWApp.m in Sources */ = {isa = PBXBuildFile; fileRef = 7896674813322CC6004140D5 /* BWApp.m */; };
+		7896675813322CC6004140D5 /* BWGlobal.m in Sources */ = {isa = PBXBuildFile; fileRef = 7896674A13322CC6004140D5 /* BWGlobal.m */; };
+		7896675913322CC6004140D5 /* BWHockeyManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7896674C13322CC6004140D5 /* BWHockeyManager.m */; };
+		7896675A13322CC6004140D5 /* BWHockeySettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7896674E13322CC6004140D5 /* BWHockeySettingsViewController.m */; };
+		7896675B13322CC6004140D5 /* BWHockeyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7896675013322CC6004140D5 /* BWHockeyViewController.m */; };
+		7896675C13322CC6004140D5 /* Hockey.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7896675113322CC6004140D5 /* Hockey.bundle */; };
+>>>>>>> HockeyKit2
 		78BCBB2A12B5323D0093AE0C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 78BCBB2712B5323D0093AE0C /* Localizable.strings */; };
+		78DA473B130DD0ED00D1585D /* lolcat.png in Resources */ = {isa = PBXBuildFile; fileRef = 78DA473A130DD0ED00D1585D /* lolcat.png */; };
 		78E9B18D12B449B800B32768 /* libFlurry.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 78E9B18C12B449B800B32768 /* libFlurry.a */; };
 		78E9B1C312B44BB900B32768 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78E9B1C212B44BB900B32768 /* QuartzCore.framework */; };
 		78E9B21112B44D4300B32768 /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E9B20D12B44D4300B32768 /* RegexKitLite.m */; };
@@ -107,12 +122,17 @@
 			remoteGlobalIDString = 788E1E6D126C95B1009801E5;
 			remoteInfo = PSFoundation;
 		};
-		7876F575130D869D00A79E01 /* PBXContainerItemProxy */ = {
+		78F938DB130DD147008FA485 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 7856A47312B444A80025424F /* PSFoundation.xcodeproj */;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
 			proxyType = 1;
+<<<<<<< HEAD
 			remoteGlobalIDString = 788E1E6D126C95B1009801E5;
 			remoteInfo = PSFoundation;
+=======
+			remoteGlobalIDString = 1D6058900D05DD3D006BFB54;
+			remoteInfo = PSAppTemplate;
+>>>>>>> HockeyKit2
 		};
 /* End PBXContainerItemProxy section */
 
@@ -146,6 +166,8 @@
 		7856A45112B4445C0025424F /* German */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = German; path = German.lproj/CrashReporter.strings; sourceTree = "<group>"; };
 		7856A46412B444640025424F /* README.mdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README.mdown; path = ../README.mdown; sourceTree = SOURCE_ROOT; };
 		7856A47312B444A80025424F /* PSFoundation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PSFoundation.xcodeproj; path = ../PSFoundation/PSFoundation.xcodeproj; sourceTree = SOURCE_ROOT; };
+		787251DE130DABEE00571A6E /* Build-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Build-Info.plist"; sourceTree = "<group>"; };
+		787251DF130DABEE00571A6E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7876F54C130D856A00A79E01 /* appstore.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = appstore.xcconfig; sourceTree = "<group>"; };
 		7876F54D130D856A00A79E01 /* appversion.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = appversion.xcconfig; sourceTree = "<group>"; };
 		7876F54E130D856A00A79E01 /* buildnumber.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = buildnumber.xcconfig; sourceTree = "<group>"; };
@@ -153,6 +175,7 @@
 		7876F550130D856A00A79E01 /* distribution.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = distribution.xcconfig; sourceTree = "<group>"; };
 		787BC4F412DB0C6E008DC03C /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSONKit.h; path = ../JSONKit/JSONKit.h; sourceTree = SOURCE_ROOT; };
 		787BC4F512DB0C6E008DC03C /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSONKit.m; path = ../JSONKit/JSONKit.m; sourceTree = SOURCE_ROOT; };
+<<<<<<< HEAD
 		7882E0CA1325001B00BE7370 /* Build-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Build-Info.plist"; sourceTree = "<group>"; };
 		7882E0CB1325001B00BE7370 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		78BCB97212B524430093AE0C /* BWWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BWWebViewController.h; sourceTree = "<group>"; };
@@ -180,8 +203,32 @@
 		78BCB98E12B524440093AE0C /* BWHockeyController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BWHockeyController.m; path = ../Hockey/client/BWHockeyController.m; sourceTree = SOURCE_ROOT; };
 		78BCB98F12B524440093AE0C /* BWHockeyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BWHockeyViewController.h; path = ../Hockey/client/BWHockeyViewController.h; sourceTree = SOURCE_ROOT; };
 		78BCB99012B524440093AE0C /* BWHockeyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BWHockeyViewController.m; path = ../Hockey/client/BWHockeyViewController.m; sourceTree = SOURCE_ROOT; };
+=======
+		7896673D13322CC6004140D5 /* NSString+HockeyAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+HockeyAdditions.h"; sourceTree = "<group>"; };
+		7896673E13322CC6004140D5 /* NSString+HockeyAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+HockeyAdditions.m"; sourceTree = "<group>"; };
+		7896673F13322CC6004140D5 /* PSAppStoreHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSAppStoreHeader.h; sourceTree = "<group>"; };
+		7896674013322CC6004140D5 /* PSAppStoreHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSAppStoreHeader.m; sourceTree = "<group>"; };
+		7896674113322CC6004140D5 /* PSStoreButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSStoreButton.h; sourceTree = "<group>"; };
+		7896674213322CC6004140D5 /* PSStoreButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSStoreButton.m; sourceTree = "<group>"; };
+		7896674313322CC6004140D5 /* PSWebTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSWebTableViewCell.h; sourceTree = "<group>"; };
+		7896674413322CC6004140D5 /* PSWebTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSWebTableViewCell.m; sourceTree = "<group>"; };
+		7896674513322CC6004140D5 /* UIImage+HockeyAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+HockeyAdditions.h"; sourceTree = "<group>"; };
+		7896674613322CC6004140D5 /* UIImage+HockeyAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+HockeyAdditions.m"; sourceTree = "<group>"; };
+		7896674713322CC6004140D5 /* BWApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BWApp.h; path = ../HockeyKit/client/iOS/BWApp.h; sourceTree = "<group>"; };
+		7896674813322CC6004140D5 /* BWApp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BWApp.m; path = ../HockeyKit/client/iOS/BWApp.m; sourceTree = "<group>"; };
+		7896674913322CC6004140D5 /* BWGlobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BWGlobal.h; path = ../HockeyKit/client/iOS/BWGlobal.h; sourceTree = "<group>"; };
+		7896674A13322CC6004140D5 /* BWGlobal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BWGlobal.m; path = ../HockeyKit/client/iOS/BWGlobal.m; sourceTree = "<group>"; };
+		7896674B13322CC6004140D5 /* BWHockeyManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BWHockeyManager.h; path = ../HockeyKit/client/iOS/BWHockeyManager.h; sourceTree = "<group>"; };
+		7896674C13322CC6004140D5 /* BWHockeyManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BWHockeyManager.m; path = ../HockeyKit/client/iOS/BWHockeyManager.m; sourceTree = "<group>"; };
+		7896674D13322CC6004140D5 /* BWHockeySettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BWHockeySettingsViewController.h; path = ../HockeyKit/client/iOS/BWHockeySettingsViewController.h; sourceTree = "<group>"; };
+		7896674E13322CC6004140D5 /* BWHockeySettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BWHockeySettingsViewController.m; path = ../HockeyKit/client/iOS/BWHockeySettingsViewController.m; sourceTree = "<group>"; };
+		7896674F13322CC6004140D5 /* BWHockeyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BWHockeyViewController.h; path = ../HockeyKit/client/iOS/BWHockeyViewController.h; sourceTree = "<group>"; };
+		7896675013322CC6004140D5 /* BWHockeyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BWHockeyViewController.m; path = ../HockeyKit/client/iOS/BWHockeyViewController.m; sourceTree = "<group>"; };
+		7896675113322CC6004140D5 /* Hockey.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Hockey.bundle; path = ../HockeyKit/client/iOS/Hockey.bundle; sourceTree = "<group>"; };
+>>>>>>> HockeyKit2
 		78BCBB2812B5323D0093AE0C /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/Localizable.strings; sourceTree = "<group>"; };
 		78BCBB2912B5323D0093AE0C /* German */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = German; path = German.lproj/Localizable.strings; sourceTree = "<group>"; };
+		78DA473A130DD0ED00D1585D /* lolcat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lolcat.png; path = Images/lolcat.png; sourceTree = "<group>"; };
 		78E9B16812B4468E00B32768 /* PSDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSDefines.h; sourceTree = "<group>"; };
 		78E9B18A12B449B800B32768 /* FlurryAdDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlurryAdDelegate.h; sourceTree = "<group>"; };
 		78E9B18B12B449B800B32768 /* FlurryAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlurryAPI.h; sourceTree = "<group>"; };
@@ -300,9 +347,15 @@
 				78E9B2AA12B4575200B32768 /* Icon-Small@2x.png */,
 				78E9B2AB12B4575200B32768 /* Icon.png */,
 				78E9B2AC12B4575200B32768 /* Icon@2x.png */,
+				787251DE130DABEE00571A6E /* Build-Info.plist */,
+				78DA473A130DD0ED00D1585D /* lolcat.png */,
+				787251DF130DABEE00571A6E /* Info.plist */,
 				78E9B2AD12B4575200B32768 /* iTunesArtwork */,
+<<<<<<< HEAD
 				7882E0CA1325001B00BE7370 /* Build-Info.plist */,
 				7882E0CB1325001B00BE7370 /* Info.plist */,
+=======
+>>>>>>> HockeyKit2
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -312,7 +365,7 @@
 			children = (
 				7856A47312B444A80025424F /* PSFoundation.xcodeproj */,
 				787BC4EF12DB0C62008DC03C /* JSON */,
-				78BCB96F12B524320093AE0C /* Hockey */,
+				78BCB96F12B524320093AE0C /* HockeyKit */,
 				78E9B21212B44DDA00B32768 /* asi-http-request */,
 				7856A44B12B4445C0025424F /* CrashReporter.framework */,
 				7856A44C12B4445C0025424F /* CrashReporterSender */,
@@ -390,82 +443,42 @@
 			name = JSON;
 			sourceTree = "<group>";
 		};
-		78BCB96F12B524320093AE0C /* Hockey */ = {
+		7896673C13322CC6004140D5 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
-				78BCB97112B524430093AE0C /* BWWebViewController */,
-				78BCB97412B524430093AE0C /* English.lproj */,
-				78BCB97712B524430093AE0C /* German.lproj */,
-				78BCB97A12B524430093AE0C /* JSON */,
-				78BCB98912B524440093AE0C /* NSString+URLEncoding */,
-				78BCB98C12B524440093AE0C /* BWGlobal.h */,
-				78BCB98D12B524440093AE0C /* BWHockeyController.h */,
-				78BCB98E12B524440093AE0C /* BWHockeyController.m */,
-				78BCB98F12B524440093AE0C /* BWHockeyViewController.h */,
-				78BCB99012B524440093AE0C /* BWHockeyViewController.m */,
+				7896673D13322CC6004140D5 /* NSString+HockeyAdditions.h */,
+				7896673E13322CC6004140D5 /* NSString+HockeyAdditions.m */,
+				7896673F13322CC6004140D5 /* PSAppStoreHeader.h */,
+				7896674013322CC6004140D5 /* PSAppStoreHeader.m */,
+				7896674113322CC6004140D5 /* PSStoreButton.h */,
+				7896674213322CC6004140D5 /* PSStoreButton.m */,
+				7896674313322CC6004140D5 /* PSWebTableViewCell.h */,
+				7896674413322CC6004140D5 /* PSWebTableViewCell.m */,
+				7896674513322CC6004140D5 /* UIImage+HockeyAdditions.h */,
+				7896674613322CC6004140D5 /* UIImage+HockeyAdditions.m */,
 			);
-			name = Hockey;
+			name = Helper;
+			path = ../HockeyKit/client/iOS/Helper;
 			sourceTree = "<group>";
 		};
-		78BCB97112B524430093AE0C /* BWWebViewController */ = {
+		78BCB96F12B524320093AE0C /* HockeyKit */ = {
 			isa = PBXGroup;
 			children = (
-				78BCB97212B524430093AE0C /* BWWebViewController.h */,
-				78BCB97312B524430093AE0C /* BWWebViewController.m */,
+				7896673C13322CC6004140D5 /* Helper */,
+				7896674713322CC6004140D5 /* BWApp.h */,
+				7896674813322CC6004140D5 /* BWApp.m */,
+				7896674913322CC6004140D5 /* BWGlobal.h */,
+				7896674A13322CC6004140D5 /* BWGlobal.m */,
+				7896674B13322CC6004140D5 /* BWHockeyManager.h */,
+				7896674C13322CC6004140D5 /* BWHockeyManager.m */,
+				7896674D13322CC6004140D5 /* BWHockeySettingsViewController.h */,
+				7896674E13322CC6004140D5 /* BWHockeySettingsViewController.m */,
+				7896674F13322CC6004140D5 /* BWHockeyViewController.h */,
+				7896675013322CC6004140D5 /* BWHockeyViewController.m */,
+				7896675113322CC6004140D5 /* Hockey.bundle */,
 			);
-			name = BWWebViewController;
-			path = ../Hockey/client/BWWebViewController;
-			sourceTree = SOURCE_ROOT;
-		};
-		78BCB97412B524430093AE0C /* English.lproj */ = {
-			isa = PBXGroup;
-			children = (
-				78BCB97512B524430093AE0C /* Hockey.strings */,
-			);
-			name = English.lproj;
-			path = ../Hockey/client/English.lproj;
-			sourceTree = SOURCE_ROOT;
-		};
-		78BCB97712B524430093AE0C /* German.lproj */ = {
-			isa = PBXGroup;
-			children = (
-				78BCB97812B524430093AE0C /* Hockey.strings */,
-			);
-			name = German.lproj;
-			path = ../Hockey/client/German.lproj;
-			sourceTree = SOURCE_ROOT;
-		};
-		78BCB97A12B524430093AE0C /* JSON */ = {
-			isa = PBXGroup;
-			children = (
-				78BCB97B12B524430093AE0C /* JSON.h */,
-				78BCB97C12B524430093AE0C /* License.md */,
-				78BCB97D12B524430093AE0C /* NSObject+SBJSON.h */,
-				78BCB97E12B524430093AE0C /* NSObject+SBJSON.m */,
-				78BCB97F12B524430093AE0C /* NSString+SBJSON.h */,
-				78BCB98012B524430093AE0C /* NSString+SBJSON.m */,
-				78BCB98112B524430093AE0C /* SBJSON.h */,
-				78BCB98212B524430093AE0C /* SBJSON.m */,
-				78BCB98312B524430093AE0C /* SBJsonBase.h */,
-				78BCB98412B524430093AE0C /* SBJsonBase.m */,
-				78BCB98512B524430093AE0C /* SBJsonParser.h */,
-				78BCB98612B524430093AE0C /* SBJsonParser.m */,
-				78BCB98712B524430093AE0C /* SBJsonWriter.h */,
-				78BCB98812B524440093AE0C /* SBJsonWriter.m */,
-			);
-			name = JSON;
-			path = ../Hockey/client/JSON;
-			sourceTree = SOURCE_ROOT;
-		};
-		78BCB98912B524440093AE0C /* NSString+URLEncoding */ = {
-			isa = PBXGroup;
-			children = (
-				78BCB98A12B524440093AE0C /* NSString+URLEncoding.h */,
-				78BCB98B12B524440093AE0C /* NSString+URLEncoding.m */,
-			);
-			name = "NSString+URLEncoding";
-			path = "../Hockey/client/NSString+URLEncoding";
-			sourceTree = SOURCE_ROOT;
+			name = HockeyKit;
+			sourceTree = "<group>";
 		};
 		78BCBB2612B5323D0093AE0C /* Localization */ = {
 			isa = PBXGroup;
@@ -614,11 +627,14 @@
 				78E9B2B212B4575200B32768 /* Icon.png in Resources */,
 				78E9B2B312B4575200B32768 /* Icon@2x.png in Resources */,
 				78E9B2B412B4575200B32768 /* iTunesArtwork in Resources */,
-				78BCB99212B524440093AE0C /* Hockey.strings in Resources */,
-				78BCB99312B524440093AE0C /* Hockey.strings in Resources */,
 				78BCBB2A12B5323D0093AE0C /* Localizable.strings in Resources */,
+<<<<<<< HEAD
 				7882E0CC1325001B00BE7370 /* Build-Info.plist in Resources */,
 				7882E0CD1325001B00BE7370 /* Info.plist in Resources */,
+=======
+				78DA473B130DD0ED00D1585D /* lolcat.png in Resources */,
+				7896675C13322CC6004140D5 /* Hockey.bundle in Resources */,
+>>>>>>> HockeyKit2
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -636,7 +652,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# increase build number for beta builds\nif [ \"$CONFIGURATION\" == \"Distribution\" ]\n\tthen /usr/bin/perl -pe 's/(BUILD_NUMBER = )(\\d+)/$1.($2+1)/eg' -i ../XCode/buildnumber.xcconfig\nfi";
+			shellScript = "# increase build number for beta builds\nif [ \"$CONFIGURATION\" == \"Distribution\" ]\n\tthen /usr/bin/perl -pe 's/(BUILD_NUMBER = )(\\d+)/$1.($2+1)/eg' -i ../Xcode/buildnumber.xcconfig\nfi";
 		};
 		7876F578130D86A600A79E01 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -649,7 +665,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "#!/bin/sh\n\n# This has to match the name of the configuration you use for Ad-Hoc builds!\nadHocConfigurationName=\"Configuration_Distribution\";\n\nexecutableName=\"AppTemplate\";\nbundleDisplayName=\"AppTemplate\";\n\nsymbolicationDirectoryPath=\"${PROJECT_DIR}/../Development\";\n\nsftpServerDirectoryPath=\"yourserver.com:/var/www/your-path-to-hockey/hockey/public/app-identifer\";\n\n\nif ([ \"${EFFECTIVE_PLATFORM_NAME}\" == \"-iphoneos\" ])\nthen\n\t\n\tapplicationPath=\"${CONFIGURATION_BUILD_DIR}/$executableName.app\";\n\tbundleVersion=$(defaults read \"$applicationPath/Info\" CFBundleVersion);\n\tbundleIdentifier=$(defaults read \"$applicationPath/Info\" CFBundleIdentifier);\n\t\n\t# Move .app file to a secure location\n  \tif !([ -e \"$symbolicationDirectoryPath/$executableName.$bundleIdentifier.$bundleVersion.app\" ])\n     then\n\n\t\techo \"Copying $applicationPath to $symbolicationDirectoryPath...\";\n       \tcp -r $applicationPath $symbolicationDirectoryPath;\n\t\tmv \"$symbolicationDirectoryPath/$executableName.app\" \"$symbolicationDirectoryPath/$executableName.$bundleIdentifier.$bundleVersion.app\";\n\t\t\n     fi\n\n\t# Move .app.dSYM file to a secure location\n\tif !([ -e \"$symbolicationDirectoryPath/$executableName.$bundleIdentifier.$bundleVersion.app.dSYM\" ])\n  \t   then\n\n       \tcp -r \"$applicationPath.dSYM\" $symbolicationDirectoryPath;\n\t\tmv \"$symbolicationDirectoryPath/$executableName.app.dSYM\" \"$symbolicationDirectoryPath/$executableName.$bundleIdentifier.$bundleVersion.app.dSYM\";\n\t\t\n     fi\n\n\n\tif ([ \"${BUILD_STYLE}\" == $adHocConfigurationName ])\n\tthen\n\t\tcd \"${CONFIGURATION_BUILD_DIR}\";\n\n\t\t# Archive the application for Ad-Hoc distribution\n\t\tmkdir \"${CONFIGURATION_BUILD_DIR}/Payload\";\n\t\tcp -r $applicationPath \"${CONFIGURATION_BUILD_DIR}/Payload\";\n\t\t(zip -qr \"$executableName.ipa\" Payload);\n\t\trm -rf \"${CONFIGURATION_BUILD_DIR}/Payload\";\n\t\t\n\t\t# Generate .plist file for wireless app distribution\n\t\techo \"<?xml version=\\\"1.0\\\" encoding=\\\"UTF-8\\\"?>\n\t\t \t <!DOCTYPE plist PUBLIC \\\"-//Apple//DTD PLIST 1.0//EN\\\" \\\"http://www.apple.com/DTDs/PropertyList-1.0.dtd\\\">\n\t\t\t <plist version=\\\"1.0\\\">\n\t\t\t <dict>\n\t\t\t\t<key>items</key>\n\t\t\t\t<array>\n\t\t\t\t\t<dict>\n\t\t\t\t\t\t<key>assets</key>\n\t\t\t\t\t\t<array>\n\t\t\t\t\t\t\t<dict>\n\t\t\t\t\t\t\t\t<key>kind</key>\n\t\t\t\t\t\t\t\t<string>software-package</string>\n\t\t\t\t\t\t\t\t<key>url</key>\n\t\t\t\t\t\t\t\t<string>__URL__</string>\n\t\t\t\t\t\t\t</dict>\n\t\t\t\t\t\t</array>\n\t\t\t\t\t\t<key>metadata</key>\n\t\t\t\t\t\t<dict>\n\t\t\t\t\t\t\t<key>bundle-identifier</key>\n\t\t\t\t\t\t\t<string>$bundleIdentifier</string>\n\t\t\t\t\t\t\t<key>bundle-version</key>\n\t\t\t\t\t\t\t<string>$bundleVersion</string>\n\t\t\t\t\t\t\t<key>kind</key>\n\t\t\t\t\t\t\t<string>software</string>\n\t\t\t\t\t\t\t<key>title</key>\n\t\t\t\t\t\t\t<string>$bundleDisplayName</string>\n\t\t\t\t\t\t</dict>\n\t\t\t\t\t</dict>\n\t\t\t\t</array>\n\t\t\t </dict>\n\t\t\t </plist>\" > \"${CONFIGURATION_BUILD_DIR}/$executableName.plist\";\n\t\t\n\t\t# Move the archived application to Dropbox\n\t\t# cp \"$executableName.ipa\" \"$dropboxDistributionDirectoryPath/$executableName.ipa\";\n\n\t\t# Open Terminal and upload the .ipa and .plist files\n\t\techo \"Uploading $executableName.ipa and $executableName.plist to $sftpServerDirectoryPath...\";\n\t\t/usr/bin/osascript <<-EOF\t\t\t\n\t\t\ton isApplicationRunning(application)\n\t\t\t\ttell application \"System Events\" to (name of processes) contains application\n\t\t\tend isApplicationRunning\n\n\t\t\tif not (isApplicationRunning(\"Terminal\")) then\n\t\t\t\ttell application \"Terminal\"\n\t\t\t\t\tlaunch\n\t\t\t\t\tclose window 1\n\t\t\t\tend tell\n\t\t\tend if\n\n\t\t\ttell application \"Terminal\"\n\t\t\t\tdo script with command \"scp \\\"${CONFIGURATION_BUILD_DIR}/$executableName.ipa\\\" \\\"$sftpServerDirectoryPath/$executableName.ipa\\\"\"\n\t\t\t\tdo script with command \"scp \\\"${CONFIGURATION_BUILD_DIR}/$executableName.plist\\\" \\\"$sftpServerDirectoryPath/$executableName.plist\\\"\"\n\t\t\t\tdo script with command \"scp \\\"${PROJECT_DIR}/../ReleaseNotes.html\\\" \\\"$sftpServerDirectoryPath/ReleaseNotes.html\\\"\"\n\t\t\t\tdo script with command \"scp \\\"${PROJECT_DIR}/../AdHoc.mobileprovision\\\" \\\"$sftpServerDirectoryPath/PlanetRomeo_AdHoc.mobileprovision\\\"\"\n\t\t\tend tell\n\t\tEOF\n\n\t\tcd \"${PROJECT_DIR}\";\n\tfi\nfi\n\nexit 0;";
+			shellScript = "#!/bin/sh\n\n# This has to match the name of the configuration you use for Ad-Hoc builds!\nadHocConfigurationName=\"Distribution\"\nadHocCertificate=\"iPhone Distribution: Peter Steinberger\"\nprovisioningProfilePath=\"/Users/steipete/Library/MobileDevice/Provisioning Profiles/772FFDBF-009F-497C-A043-0B354575D189.mobileprovision\"\n\nexecutableName=\"AppTemplate\"\nbundleDisplayName=\"AppTemplate\"\n\narchiveDirectoryPath=\"${PROJECT_DIR}/Releases/Beta\";\ndropboxDistributionDirectoryPath=\"\";\n\nuploadMethod=\"scp\"\n\nsecretSubDirStart='apptmpl'\n\nscpUser=\"steipete\"\nscpHost=\"petersteinberger.com\"\nscpPath=\"/var/www/pstein/blog/appstore\"\n\napplicationPath=\"${CONFIGURATION_BUILD_DIR}/$executableName.app\"\n\nif [[ \"${EFFECTIVE_PLATFORM_NAME}\" == \"-iphoneos\" && \"${BUILD_STYLE}\" == $adHocConfigurationName && -e $applicationPath ]]\nthen\n    bundleVersion=$(defaults read \"$applicationPath/Info\" CFBundleVersion)\n    bundleIdentifier=$(defaults read \"$applicationPath/Info\" CFBundleIdentifier)\n    bundleShortVersionString=$(defaults read \"$applicationPath/Info\" CFBundleShortVersionString)\n    \n    # Zip the app and dSYM\n    zipPath=\"${CONFIGURATION_BUILD_DIR}/$executableName $bundleVersion.zip\"\n    \n    zip -qr \"${CONFIGURATION_BUILD_DIR}/$executableName $bundleVersion.zip\" . -i ${CONFIGURATION_BUILD_DIR}/$executableName.app ${CONFIGURATION_BUILD_DIR}/$executableName.app.dSYM\n    \n    # Move new archive\n    if !([ -e \"$archiveDirectoryPath/$bundleIdentifier $bundleVersion.zip\" ])\n    then\n        mv \"$zipPath\" \"$archiveDirectoryPath\";\n    fi\n    \n    cd \"${CONFIGURATION_BUILD_DIR}\"\n\n    # Archive the application for Ad-Hoc distribution\n    /usr/bin/xcrun -sdk iphoneos PackageApplication \"$executableName.app\" -o \"${CONFIGURATION_BUILD_DIR}/$executableName.ipa\" --sign \"$adHocCertificate\" --embed \"$provisioningProfilePath\"\n    \n    # Generate .plist file for wireless app distribution\n    echo \"<?xml version=\\\"1.0\\\" encoding=\\\"UTF-8\\\"?>\n         <!DOCTYPE plist PUBLIC \\\"-//Apple//DTD PLIST 1.0//EN\\\" \\\"http://www.apple.com/DTDs/PropertyList-1.0.dtd\\\">\n         <plist version=\\\"1.0\\\">\n         <dict>\n            <key>items</key>\n            <array>\n                <dict>\n                    <key>assets</key>\n                    <array>\n                        <dict>\n                            <key>kind</key>\n                            <string>software-package</string>\n                            <key>url</key>\n                            <string>__URL__</string>\n                        </dict>\n                    </array>\n                    <key>metadata</key>\n                    <dict>\n                        <key>bundle-identifier</key>\n                        <string>$bundleIdentifier</string>\n                        <key>bundle-version</key>\n                        <string>$bundleVersion</string>\n                        <key>kind</key>\n                        <string>software</string>\n                        <key>title</key>\n                        <string>$bundleDisplayName</string>\n                        <key>subtitle</key>\n                        <string>$bundleShortVersionString</string>\n                    </dict>\n                </dict>\n            </array>\n         </dict>\n         </plist>\" > \"${CONFIGURATION_BUILD_DIR}/$executableName.plist\";\n    \n    # Move the archived application to Dropbox\n    cp \"$executableName.ipa\" \"$dropboxDistributionDirectoryPath/$executableName.ipa\";\n    \n    # Open Terminal and upload the .ipa and .plist files\n    if ([ \"$uploadMethod\" == \"ftp\" ])\n    then\n        echo \"Uploading $executableName.ipa and $executableName.plist to $ftpServerDirectoryPath...\";\n        \n        /usr/bin/osascript <<-EOF           \non isApplicationRunning(application)\ntell application \"System Events\" to (name of processes) contains application\nend isApplicationRunning\n\nif not (isApplicationRunning(\"Terminal\")) then\ntell application \"Terminal\"\n    launch\n    close window 1\nend tell\nend if\n\ntell application \"Terminal\"\ndo script with command \"curl -T \\\"${CONFIGURATION_BUILD_DIR}/$executableName.ipa\\\" -u $ftpUsername:$ftpPassword \\\"ftp://$ftpServerDirectoryPath/$bundleIdentifier/$executableName.ipa\\\"\"\ndo script with command \"curl -T \\\"${CONFIGURATION_BUILD_DIR}/$executableName.plist\\\" -u $ftpUsername:$ftpPassword \\\"ftp://$ftpServerDirectoryPath/$bundleIdentifier/$executableName.plist\\\"\"\nend tell\nEOF\n    elif [[ \"$uploadMethod\" == \"scp\" ]]\n    then\n        echo \"Uploading $executableName.ipa and $executableName.plist to $scpHost...\";\n        ssh $scpUser@$scpHost \"mkdir $scpPath/$bundleIdentifier/$secretSubDirStart$bundleVersion/\"\n        scp \"${CONFIGURATION_BUILD_DIR}/$executableName.ipa\" $scpUser@$scpHost:\"$scpPath/$bundleIdentifier/$secretSubDirStart$bundleVersion/\"\n        scp \"${CONFIGURATION_BUILD_DIR}/$executableName.plist\" $scpUser@$scpHost:\"$scpPath/$bundleIdentifier/$secretSubDirStart$bundleVersion/\"\n        scp \"${PROJECT_DIR}/../ReleaseNotes.html\" $scpUser@$scpHost:\"$scpPath/$bundleIdentifier/$secretSubDirStart$bundleVersion/\"\n    fi\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -671,18 +687,18 @@
 				78E9B23212B44DE400B32768 /* ASIHTTPRequest.m in Sources */,
 				78E9B23312B44DE400B32768 /* ASIInputStream.m in Sources */,
 				78E9B23412B44DE400B32768 /* ASINetworkQueue.m in Sources */,
-				78BCB99112B524440093AE0C /* BWWebViewController.m in Sources */,
-				78BCB99512B524440093AE0C /* NSObject+SBJSON.m in Sources */,
-				78BCB99612B524440093AE0C /* NSString+SBJSON.m in Sources */,
-				78BCB99712B524440093AE0C /* SBJSON.m in Sources */,
-				78BCB99812B524440093AE0C /* SBJsonBase.m in Sources */,
-				78BCB99912B524440093AE0C /* SBJsonParser.m in Sources */,
-				78BCB99A12B524440093AE0C /* SBJsonWriter.m in Sources */,
-				78BCB99B12B524440093AE0C /* NSString+URLEncoding.m in Sources */,
-				78BCB99C12B524440093AE0C /* BWHockeyController.m in Sources */,
-				78BCB99D12B524440093AE0C /* BWHockeyViewController.m in Sources */,
 				3994620712C91F03005574A6 /* FTLocationSimulator.m in Sources */,
 				787BC4F612DB0C6E008DC03C /* JSONKit.m in Sources */,
+				7896675213322CC6004140D5 /* NSString+HockeyAdditions.m in Sources */,
+				7896675313322CC6004140D5 /* PSAppStoreHeader.m in Sources */,
+				7896675413322CC6004140D5 /* PSStoreButton.m in Sources */,
+				7896675513322CC6004140D5 /* PSWebTableViewCell.m in Sources */,
+				7896675613322CC6004140D5 /* UIImage+HockeyAdditions.m in Sources */,
+				7896675713322CC6004140D5 /* BWApp.m in Sources */,
+				7896675813322CC6004140D5 /* BWGlobal.m in Sources */,
+				7896675913322CC6004140D5 /* BWHockeyManager.m in Sources */,
+				7896675A13322CC6004140D5 /* BWHockeySettingsViewController.m in Sources */,
+				7896675B13322CC6004140D5 /* BWHockeyViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -694,10 +710,10 @@
 			name = PSFoundation;
 			targetProxy = 7856A48012B444B10025424F /* PBXContainerItemProxy */;
 		};
-		7876F576130D869D00A79E01 /* PBXTargetDependency */ = {
+		78F938DC130DD147008FA485 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = PSFoundation;
-			targetProxy = 7876F575130D869D00A79E01 /* PBXContainerItemProxy */;
+			target = 1D6058900D05DD3D006BFB54 /* PSAppTemplate */;
+			targetProxy = 78F938DB130DD147008FA485 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -709,22 +725,6 @@
 				7856A45112B4445C0025424F /* German */,
 			);
 			name = CrashReporter.strings;
-			sourceTree = "<group>";
-		};
-		78BCB97512B524430093AE0C /* Hockey.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				78BCB97612B524430093AE0C /* English */,
-			);
-			name = Hockey.strings;
-			sourceTree = "<group>";
-		};
-		78BCB97812B524430093AE0C /* Hockey.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				78BCB97912B524430093AE0C /* German */,
-			);
-			name = Hockey.strings;
 			sourceTree = "<group>";
 		};
 		78BCBB2712B5323D0093AE0C /* Localizable.strings */ = {
@@ -824,6 +824,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
+				DEPLOYMENT_POSTPROCESSING = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/..\"",
@@ -836,6 +837,7 @@
 					"\"$(SRCROOT)/../Flurry/iPhone v2.7 (build 42)/FlurryLib\"",
 				);
 				PRODUCT_NAME = AppTemplate;
+				STRIP_INSTALLED_PRODUCT = YES;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = AppStore;
@@ -907,7 +909,7 @@
 			baseConfigurationReference = 7876F550130D856A00A79E01 /* distribution.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Peter Steinberger";
 				FRAMEWORK_SEARCH_PATHS = "..//**";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -932,7 +934,7 @@
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				OTHER_LDFLAGS = "-all_load";
 				PREBINDING = NO;
-				RUN_CLANG_STATIC_ANALYZER = YES;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "772FFDBF-009F-497C-A043-0B354575D189";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -10,12 +10,19 @@
 #import "CrashReportSender.h"
 #endif
 
+#ifdef kUseAutoUpdater
+#import "BWHockeyManager.h"
+#endif
+
 // suspend/kill delegate
 #define kAppplicationWillSuspend @"kAppplicationWillSuspend"
 
 @interface AppDelegate : NSObject <UIApplicationDelegate
 #ifdef kUseCrashReporter
   ,CrashReportSenderDelegate
+#endif
+#ifdef kUseAutoUpdater
+  ,BWHockeyManagerDelegate
 #endif
 > {
 
