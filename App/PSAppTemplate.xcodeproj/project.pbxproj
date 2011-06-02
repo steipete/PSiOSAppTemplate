@@ -690,6 +690,7 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = PSAppTemplate_Prefix.pch;
+				HEADER_SEARCH_PATHS = "../PSFoundation/**";
 				INFOPLIST_FILE = "Build-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
