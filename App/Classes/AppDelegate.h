@@ -6,6 +6,8 @@
 //  Template by Peter Steinberger
 //
 
+#import "PSDefines.h"
+
 #ifdef kUseCrashReporter
 #import "CrashReportSender.h"
 #endif

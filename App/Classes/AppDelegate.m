@@ -6,10 +6,9 @@
 //  Template by Peter Steinberger
 //
 
-#import "PSFoundation.h"
-#import "BWHockeyManager.h"
-#import "PSDefines.h"
 #import "AppDelegate.h"
+#import "PSIncludes.h"
+#import "BWHockeyManager.h"
 #import "RootViewController.h"
 
 #ifdef kUseFlurryStatistics

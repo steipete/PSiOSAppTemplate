@@ -6,7 +6,7 @@
 //  Template by Peter Steinberger
 //
 
-#import "PSFoundation.h"
+#import "PSIncludes.h"
 
 @interface RootViewController : PSTableViewController {
 }
