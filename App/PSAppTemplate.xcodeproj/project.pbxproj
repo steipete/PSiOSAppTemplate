@@ -121,7 +121,7 @@
 		1D6058910D05DD3D006BFB54 /* AppTemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppTemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		28A0AAE50D9B0CCF005BE974 /* PSAppTemplate_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSAppTemplate_Prefix.pch; sourceTree = "<group>"; };
+		28A0AAE50D9B0CCF005BE974 /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
 		28C286DF0D94DF7D0034E888 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		28C286E00D94DF7D0034E888 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -244,10 +244,11 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				39C917B91398367C0045489C /* Model */,
+				39C917BA139836840045489C /* Views */,
+				39C917B8139836750045489C /* View Controller */,
 				1D3623240D0F684500981E51 /* AppDelegate.h */,
 				1D3623250D0F684500981E51 /* AppDelegate.m */,
-				28C286DF0D94DF7D0034E888 /* RootViewController.h */,
-				28C286E00D94DF7D0034E888 /* RootViewController.m */,
 				78E9B16812B4468E00B32768 /* PSDefines.h */,
 			);
 			path = Classes;
@@ -279,7 +280,7 @@
 		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
-				28A0AAE50D9B0CCF005BE974 /* PSAppTemplate_Prefix.pch */,
+				28A0AAE50D9B0CCF005BE974 /* Prefix.pch */,
 				29B97316FDCFA39411CA2CEA /* main.m */,
 			);
 			name = "Other Sources";
@@ -307,27 +308,27 @@
 			isa = PBXGroup;
 			children = (
 				7856A47312B444A80025424F /* PSFoundation.xcodeproj */,
-				787BC4EF12DB0C62008DC03C /* JSON */,
-				78BCB96F12B524320093AE0C /* HockeyKit */,
 				78E9B21212B44DDA00B32768 /* asi-http-request */,
-				7856A44B12B4445C0025424F /* CrashReporter.framework */,
 				7856A44C12B4445C0025424F /* CrashReporterSender */,
-				78E9B20812B44D4300B32768 /* regexkitlite */,
 				78E9B18912B449B800B32768 /* FlurryLib */,
 				3994620212C91F03005574A6 /* FTLocationSimulator */,
+				78BCB96F12B524320093AE0C /* HockeyKit */,
+				787BC4EF12DB0C62008DC03C /* JSON */,
+				78E9B20812B44D4300B32768 /* regexkitlite */,
+				7856A44B12B4445C0025424F /* CrashReporter.framework */,
 				78E9B1C212B44BB900B32768 /* QuartzCore.framework */,
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */,
 				7856A40B12B441D10025424F /* MobileCoreServices.framework */,
 				7856A40D12B441E00025424F /* SystemConfiguration.framework */,
-				7856A41312B441F40025424F /* libz.1.1.3.dylib */,
 				7856A41512B441FB0025424F /* AudioToolbox.framework */,
 				7856A41712B442070025424F /* CFNetwork.framework */,
 				7856A41912B4420E0025424F /* Security.framework */,
-				78E9B25112B4514200B32768 /* libicucore.A.dylib */,
 				3994620B12C91F1D005574A6 /* CoreLocation.framework */,
 				3994620F12C91F27005574A6 /* MapKit.framework */,
+				78E9B25112B4514200B32768 /* libicucore.A.dylib */,
+				7856A41312B441F40025424F /* libz.1.1.3.dylib */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -342,6 +343,29 @@
 			name = FTLocationSimulator;
 			path = ../FTLocationSimulator;
 			sourceTree = SOURCE_ROOT;
+		};
+		39C917B8139836750045489C /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				28C286DF0D94DF7D0034E888 /* RootViewController.h */,
+				28C286E00D94DF7D0034E888 /* RootViewController.m */,
+			);
+			name = "View Controller";
+			sourceTree = "<group>";
+		};
+		39C917B91398367C0045489C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		39C917BA139836840045489C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
 		};
 		7856A44C12B4445C0025424F /* CrashReporterSender */ = {
 			isa = PBXGroup;
@@ -689,7 +713,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = PSAppTemplate_Prefix.pch;
+				GCC_PREFIX_HEADER = Prefix.pch;
 				HEADER_SEARCH_PATHS = "../PSFoundation/**";
 				INFOPLIST_FILE = "Build-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
@@ -710,7 +734,7 @@
 					"\"$(SRCROOT)/..\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = PSAppTemplate_Prefix.pch;
+				GCC_PREFIX_HEADER = Prefix.pch;
 				INFOPLIST_FILE = "Build-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -768,7 +792,7 @@
 					"\"$(SRCROOT)/..\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = PSAppTemplate_Prefix.pch;
+				GCC_PREFIX_HEADER = Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
