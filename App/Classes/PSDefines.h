@@ -5,16 +5,14 @@
 //  Created by Peter Steinberger on 12.12.10.
 //
 
-// configure template
+////////////////////////////////////////////////////////////////////////
+#pragma mark -
+#pragma mark Template Configuration
+////////////////////////////////////////////////////////////////////////
 
 #define kIntroFadeAnimation
 #define kUseCrashReporter
 #define kCrashReporterFeedbackEnabled NO // boolean switch
-
-// awesome visual debugging
-#ifdef TARGET_IPHONE_SIMULATOR
-    #define kDCIntrospectEnabled
-#endif
 
 #ifdef APPSTORE
   #define kUseFlurryStatistics
@@ -22,11 +20,31 @@
   #define kUseAutoUpdater
 #endif
 
+////////////////////////////////////////////////////////////////////////
+#pragma mark -
+#pragma mark DCInstropect - Awesome visual debugging
+////////////////////////////////////////////////////////////////////////
 
-// keys & urls
+#ifdef TARGET_IPHONE_SIMULATOR
+    #define kDCIntrospectEnabled
+#endif
+
+
+////////////////////////////////////////////////////////////////////////
+#pragma mark -
+#pragma mark URLs
+////////////////////////////////////////////////////////////////////////
+
 #ifndef APPSTORE
   #define kHockeyUpdateDistributionUrl @"http://petersteinberger.com/appstore"
 #endif
 
-#define kFlurryStatisticsKey @"INSERT_FLURRY_KEY"
 #define kCrashReporterUrl @"http://path-to-crashreporter.com/crashreporter/crash_v200.php"
+
+
+////////////////////////////////////////////////////////////////////////
+#pragma mark -
+#pragma mark Keys
+////////////////////////////////////////////////////////////////////////
+
+#define kFlurryStatisticsKey @"INSERT_FLURRY_KEY"
