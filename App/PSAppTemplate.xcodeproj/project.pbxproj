@@ -35,6 +35,7 @@
 		39C917D013983B890045489C /* DCFrameView.m in Sources */ = {isa = PBXBuildFile; fileRef = 39C917C913983B890045489C /* DCFrameView.m */; };
 		39C917D113983B890045489C /* DCIntrospect.m in Sources */ = {isa = PBXBuildFile; fileRef = 39C917CB13983B890045489C /* DCIntrospect.m */; };
 		39C917D213983B890045489C /* DCStatusBarOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 39C917CE13983B890045489C /* DCStatusBarOverlay.m */; };
+		39C9181F1398E1950045489C /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 39C9181E1398E1950045489C /* Default.png */; };
 		7856A40C12B441D10025424F /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7856A40B12B441D10025424F /* MobileCoreServices.framework */; };
 		7856A40E12B441E00025424F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7856A40D12B441E00025424F /* SystemConfiguration.framework */; };
 		7856A41412B441F40025424F /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7856A41312B441F40025424F /* libz.1.1.3.dylib */; };
@@ -158,6 +159,7 @@
 		39C917CC13983B890045489C /* DCIntrospectSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCIntrospectSettings.h; sourceTree = "<group>"; };
 		39C917CD13983B890045489C /* DCStatusBarOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCStatusBarOverlay.h; sourceTree = "<group>"; };
 		39C917CE13983B890045489C /* DCStatusBarOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCStatusBarOverlay.m; sourceTree = "<group>"; };
+		39C9181E1398E1950045489C /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = Images/Default.png; sourceTree = "<group>"; };
 		7856A40B12B441D10025424F /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		7856A40D12B441E00025424F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		7856A41312B441F40025424F /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
@@ -325,9 +327,10 @@
 				78E9B2AA12B4575200B32768 /* Icon-Small@2x.png */,
 				78E9B2AB12B4575200B32768 /* Icon.png */,
 				78E9B2AC12B4575200B32768 /* Icon@2x.png */,
-				787251DE130DABEE00571A6E /* Build-Info.plist */,
+				39C9181E1398E1950045489C /* Default.png */,
 				78DA473A130DD0ED00D1585D /* lolcat.png */,
 				787251DF130DABEE00571A6E /* Info.plist */,
+				787251DE130DABEE00571A6E /* Build-Info.plist */,
 				78E9B2AD12B4575200B32768 /* iTunesArtwork */,
 			);
 			name = Resources;
@@ -660,6 +663,7 @@
 				78BCBB2A12B5323D0093AE0C /* Localizable.strings in Resources */,
 				78DA473B130DD0ED00D1585D /* lolcat.png in Resources */,
 				7896675C13322CC6004140D5 /* Hockey.bundle in Resources */,
+				39C9181F1398E1950045489C /* Default.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

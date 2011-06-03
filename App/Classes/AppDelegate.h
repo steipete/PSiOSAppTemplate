@@ -27,8 +27,6 @@
   ,BWHockeyManagerDelegate
 #endif
 > {
-
-  UIImageView            *splashView_;
   UIWindow               *window_;
   UINavigationController *navigationController_;
 }

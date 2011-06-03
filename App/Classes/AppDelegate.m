@@ -25,8 +25,6 @@
 - (void)configureLogger;
 - (void)appplicationPrepareForBackgroundOrTermination:(UIApplication *)application;
 - (void)postFinishLaunch;
-- (void)startupAnimationDone:(NSString *)animationID finished:(NSNumber *)finished context:(void *)context;
-
 @end
 
 
@@ -42,7 +40,6 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
 - (void)dealloc {
-    MCRelease(splashView_);
     MCRelease(window_);
     MCRelease(navigationController_);
     
@@ -75,25 +72,15 @@
     window_.rootViewController = navigationController_;
     [window_ makeKeyAndVisible];
     
+    // fade animation!
+#ifdef kIntroFadeAnimation
+    MTSplashScreen *splashScreen = [MTSplashScreen splashScreen];
+    [self.navigationController presentModalViewController:splashScreen animated:NO];
+#endif
+    
     // visual debugging!
 #ifdef kDCIntrospectEnabled
     [[DCIntrospect sharedIntrospector] start];
-#endif
-    
-    // fade animation!
-#ifdef kIntroFadeAnimation
-    splashView_ = [[UIImageView alloc] initWithFrame:CGRectMake(0,0, 320, 480)];
-    splashView_.image = [UIImage imageNamed:@"Default"];
-    splashView_.frame = CGRectMake(0, -45, 320, 480);
-    [rootController.view addSubview:splashView_];
-    [rootController.view bringSubviewToFront:splashView_];
-    [UIView beginAnimations:nil context:nil];
-    [UIView setAnimationDuration:0.3];
-    [UIView setAnimationTransition:UIViewAnimationTransitionNone forView:rootController.view cache:YES];
-    [UIView setAnimationDelegate:self];
-    [UIView setAnimationDidStopSelector:@selector(startupAnimationDone:finished:context:)];
-    splashView_.alpha = 0.0;
-    [UIView commitAnimations];
 #endif
     
 #if !defined (APPSTORE)
@@ -200,12 +187,6 @@
     [FlurryAPI startSession:kFlurryStatisticsKey];
 #endif
 }
-
-- (void)startupAnimationDone:(NSString *)animationID finished:(NSNumber *)finished context:(void *)context {
-    [splashView_ removeFromSuperview];
-    MCReleaseNil(splashView_);
-}
-
 
 @end
 
