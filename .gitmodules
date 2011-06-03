@@ -10,3 +10,6 @@
 [submodule "HockeyKit"]
 	path = HockeyKit
 	url = git://github.com/TheRealKerni/HockeyKit.git
+[submodule "DCIntrospect"]
+	path = DCIntrospect
+	url = https://github.com/domesticcatsoftware/DCIntrospect.git

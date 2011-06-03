@@ -11,6 +11,11 @@
 #define kUseCrashReporter
 #define kCrashReporterFeedbackEnabled NO // boolean switch
 
+// awesome visual debugging
+#ifdef TARGET_IPHONE_SIMULATOR
+    #define kDCIntrospectEnabled
+#endif
+
 #ifdef APPSTORE
   #define kUseFlurryStatistics
 #else

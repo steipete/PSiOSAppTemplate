@@ -31,6 +31,10 @@
 		3994620712C91F03005574A6 /* FTLocationSimulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 3994620512C91F03005574A6 /* FTLocationSimulator.m */; };
 		3994620C12C91F1D005574A6 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3994620B12C91F1D005574A6 /* CoreLocation.framework */; };
 		3994621012C91F27005574A6 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3994620F12C91F27005574A6 /* MapKit.framework */; };
+		39C917CF13983B890045489C /* DCCrossHairView.m in Sources */ = {isa = PBXBuildFile; fileRef = 39C917C713983B890045489C /* DCCrossHairView.m */; };
+		39C917D013983B890045489C /* DCFrameView.m in Sources */ = {isa = PBXBuildFile; fileRef = 39C917C913983B890045489C /* DCFrameView.m */; };
+		39C917D113983B890045489C /* DCIntrospect.m in Sources */ = {isa = PBXBuildFile; fileRef = 39C917CB13983B890045489C /* DCIntrospect.m */; };
+		39C917D213983B890045489C /* DCStatusBarOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 39C917CE13983B890045489C /* DCStatusBarOverlay.m */; };
 		7856A40C12B441D10025424F /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7856A40B12B441D10025424F /* MobileCoreServices.framework */; };
 		7856A40E12B441E00025424F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7856A40D12B441E00025424F /* SystemConfiguration.framework */; };
 		7856A41412B441F40025424F /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7856A41312B441F40025424F /* libz.1.1.3.dylib */; };
@@ -145,6 +149,15 @@
 		3994620B12C91F1D005574A6 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		3994620F12C91F27005574A6 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		39C917BB139837940045489C /* PSIncludes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSIncludes.h; sourceTree = "<group>"; };
+		39C917C613983B890045489C /* DCCrossHairView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCCrossHairView.h; sourceTree = "<group>"; };
+		39C917C713983B890045489C /* DCCrossHairView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCCrossHairView.m; sourceTree = "<group>"; };
+		39C917C813983B890045489C /* DCFrameView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCFrameView.h; sourceTree = "<group>"; };
+		39C917C913983B890045489C /* DCFrameView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCFrameView.m; sourceTree = "<group>"; };
+		39C917CA13983B890045489C /* DCIntrospect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCIntrospect.h; sourceTree = "<group>"; };
+		39C917CB13983B890045489C /* DCIntrospect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCIntrospect.m; sourceTree = "<group>"; };
+		39C917CC13983B890045489C /* DCIntrospectSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCIntrospectSettings.h; sourceTree = "<group>"; };
+		39C917CD13983B890045489C /* DCStatusBarOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCStatusBarOverlay.h; sourceTree = "<group>"; };
+		39C917CE13983B890045489C /* DCStatusBarOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCStatusBarOverlay.m; sourceTree = "<group>"; };
 		7856A40B12B441D10025424F /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		7856A40D12B441E00025424F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		7856A41312B441F40025424F /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
@@ -326,6 +339,7 @@
 				7856A47312B444A80025424F /* PSFoundation.xcodeproj */,
 				78E9B21212B44DDA00B32768 /* asi-http-request */,
 				7856A44C12B4445C0025424F /* CrashReporterSender */,
+				39C917C513983B890045489C /* DCIntrospect */,
 				78E9B18912B449B800B32768 /* FlurryLib */,
 				3994620212C91F03005574A6 /* FTLocationSimulator */,
 				78BCB96F12B524320093AE0C /* HockeyKit */,
@@ -381,6 +395,23 @@
 			children = (
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		39C917C513983B890045489C /* DCIntrospect */ = {
+			isa = PBXGroup;
+			children = (
+				39C917C613983B890045489C /* DCCrossHairView.h */,
+				39C917C713983B890045489C /* DCCrossHairView.m */,
+				39C917C813983B890045489C /* DCFrameView.h */,
+				39C917C913983B890045489C /* DCFrameView.m */,
+				39C917CA13983B890045489C /* DCIntrospect.h */,
+				39C917CB13983B890045489C /* DCIntrospect.m */,
+				39C917CC13983B890045489C /* DCIntrospectSettings.h */,
+				39C917CD13983B890045489C /* DCStatusBarOverlay.h */,
+				39C917CE13983B890045489C /* DCStatusBarOverlay.m */,
+			);
+			name = DCIntrospect;
+			path = ../DCIntrospect/DCIntrospect;
 			sourceTree = "<group>";
 		};
 		7856A44C12B4445C0025424F /* CrashReporterSender */ = {
@@ -693,6 +724,10 @@
 				7896675913322CC6004140D5 /* BWHockeyManager.m in Sources */,
 				7896675A13322CC6004140D5 /* BWHockeySettingsViewController.m in Sources */,
 				7896675B13322CC6004140D5 /* BWHockeyViewController.m in Sources */,
+				39C917CF13983B890045489C /* DCCrossHairView.m in Sources */,
+				39C917D013983B890045489C /* DCFrameView.m in Sources */,
+				39C917D113983B890045489C /* DCIntrospect.m in Sources */,
+				39C917D213983B890045489C /* DCStatusBarOverlay.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -15,6 +15,10 @@
 #import "FlurryAPI.h"
 #endif
 
+#ifdef kDCIntrospectEnabled
+#import "DCIntrospect.h"
+#endif
+
 
 @interface AppDelegate ()
 
@@ -70,6 +74,11 @@
     window_ = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     window_.rootViewController = navigationController_;
     [window_ makeKeyAndVisible];
+    
+    // visual debugging!
+#ifdef kDCIntrospectEnabled
+    [[DCIntrospect sharedIntrospector] start];
+#endif
     
     // fade animation!
 #ifdef kIntroFadeAnimation
