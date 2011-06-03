@@ -7,6 +7,7 @@
 //
 
 #import "PSDefines.h"
+#import "PSWindow.h"
 
 #ifdef kUseCrashReporter
 #import "CrashReportSender.h"
@@ -16,9 +17,6 @@
 #import "BWHockeyManager.h"
 #endif
 
-// suspend/kill delegate
-#define kAppplicationWillSuspend @"kAppplicationWillSuspend"
-
 @interface AppDelegate : NSObject <UIApplicationDelegate
 #ifdef kUseCrashReporter
   ,CrashReportSenderDelegate
@@ -27,7 +25,7 @@
   ,BWHockeyManagerDelegate
 #endif
 > {
-  UIWindow               *window_;
+  PSWindow               *window_;
   UINavigationController *navigationController_;
 }
 

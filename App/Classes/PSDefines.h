@@ -12,7 +12,12 @@
 
 #define kIntroFadeAnimation
 #define kUseCrashReporter
-#define kCrashReporterFeedbackEnabled NO // boolean switch
+#define kCrashReporterFeedbackEnabled NO    // boolean switch
+#define kPostFinishLaunchDelay      -1.     // set to positive value to call postFinishLaunch in AppDelegate after delay
+
+#ifdef DEBUG
+#define kMemoryWarningAfterDeviceShake
+#endif
 
 #ifdef APPSTORE
   #define kUseFlurryStatistics
@@ -48,3 +53,13 @@
 ////////////////////////////////////////////////////////////////////////
 
 #define kFlurryStatisticsKey @"INSERT_FLURRY_KEY"
+
+////////////////////////////////////////////////////////////////////////
+#pragma mark -
+#pragma mark Notifications
+////////////////////////////////////////////////////////////////////////
+
+// suspend/kill delegate
+#define kAppplicationWillSuspendNotification @"kAppplicationWillSuspendNotification"
+// device shaken
+#define kDeviceWasShakenNotification         @"kDeviceWasShakenNotification"

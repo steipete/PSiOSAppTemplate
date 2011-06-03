@@ -25,6 +25,7 @@
 - (void)configureLogger;
 - (void)appplicationPrepareForBackgroundOrTermination:(UIApplication *)application;
 - (void)postFinishLaunch;
+- (void)deviceShakeDetected;
 @end
 
 
@@ -42,6 +43,10 @@
 - (void)dealloc {
     MCRelease(window_);
     MCRelease(navigationController_);
+    
+#ifdef kMemoryWarningAfterDeviceShake
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:kDeviceWasShakenNotification object:window_];
+#endif
     
     [super dealloc];
 }
@@ -68,7 +73,7 @@
     // Add the navigation controller's view to the window and display.
     RootViewController *rootController = [[[RootViewController alloc] initWithStyle:UITableViewStylePlain] autorelease];
     navigationController_ = [[UINavigationController alloc] initWithRootViewController:rootController];
-    window_ = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    window_ = [[PSWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     window_.rootViewController = navigationController_;
     [window_ makeKeyAndVisible];
     
@@ -88,6 +93,14 @@
     [BWHockeyManager sharedHockeyManager].updateURL = kHockeyUpdateDistributionUrl;
     [BWHockeyManager sharedHockeyManager].delegate = self;
     [BWHockeyManager sharedHockeyManager].alwaysShowUpdateReminder = YES;  
+#endif
+    
+    if (kPostFinishLaunchDelay > 0) {
+        [self performSelector:@selector(postFinishLaunch) withObject:nil afterDelay:kPostFinishLaunchDelay];
+    }
+   
+#ifdef kMemoryWarningAfterDeviceShake
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(deviceShakeDetected) name:kDeviceWasShakenNotification object:window_];
 #endif
     
     return YES;
@@ -178,7 +191,7 @@
     DDLogInfo(@"detected application termination.");
     
     // post notification to all listeners
-    [[NSNotificationCenter defaultCenter] postNotificationName:kAppplicationWillSuspend object:application];
+    [[NSNotificationCenter defaultCenter] postNotificationName:kAppplicationWillSuspendNotification object:application];
 }
 
 // launched via post selector to speed up launch time
@@ -186,6 +199,10 @@
 #ifdef kUseFlurryStatistics
     [FlurryAPI startSession:kFlurryStatisticsKey];
 #endif
+}
+
+- (void)deviceShakeDetected {
+    PSSimulateMemoryWarning();
 }
 
 @end
