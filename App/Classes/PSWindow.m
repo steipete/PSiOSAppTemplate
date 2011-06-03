@@ -7,16 +7,24 @@
 //
 
 #import "PSWindow.h"
-#import "PSDefines.h"
+#import "PSIncludes.h"
 
 
 @implementation PSWindow
 
 - (void)motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event {
-    [super motionEnded:motion withEvent:event];
-    
     if (event.type == UIEventTypeMotion && event.subtype == UIEventSubtypeMotionShake) {
         [[NSNotificationCenter defaultCenter] postNotificationName:kDeviceWasShakenNotification object:self];
+        
+#ifdef kMemoryWarningAfterDeviceShake
+        DDLogInfo(@"Detected Device Shake, will simulate memory warning");
+        PSSimulateMemoryWarning();
+#else
+        [super motionEnded:motion withEvent:event];
+#endif
+        
+    } else {
+        [super motionEnded:motion withEvent:event];
     }
 }
 

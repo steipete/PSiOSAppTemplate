@@ -25,7 +25,6 @@
 - (void)configureLogger;
 - (void)appplicationPrepareForBackgroundOrTermination:(UIApplication *)application;
 - (void)postFinishLaunch;
-- (void)deviceShakeDetected;
 @end
 
 
@@ -44,10 +43,6 @@
     MCRelease(window_);
     MCRelease(navigationController_);
     
-#ifdef kMemoryWarningAfterDeviceShake
-    [[NSNotificationCenter defaultCenter] removeObserver:self name:kDeviceWasShakenNotification object:window_];
-#endif
-    
     [super dealloc];
 }
 
@@ -58,7 +53,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [self configureLogger];
-    DDLogInfo(LocalizedString(@"PSTemplateWelcomeMessage"));
+    DDLogInfo(_(@"PSTemplateWelcomeMessage"));
     
 #ifdef kUseCrashReporter
     [[CrashReportSender sharedCrashReportSender] sendCrashReportToURL:[NSURL URLWithString:kCrashReporterUrl] 
@@ -99,10 +94,6 @@
         [self performSelector:@selector(postFinishLaunch) withObject:nil afterDelay:kPostFinishLaunchDelay];
     }
    
-#ifdef kMemoryWarningAfterDeviceShake
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(deviceShakeDetected) name:kDeviceWasShakenNotification object:window_];
-#endif
-    
     return YES;
 }
 
@@ -199,10 +190,6 @@
 #ifdef kUseFlurryStatistics
     [FlurryAPI startSession:kFlurryStatisticsKey];
 #endif
-}
-
-- (void)deviceShakeDetected {
-    PSSimulateMemoryWarning();
 }
 
 @end
