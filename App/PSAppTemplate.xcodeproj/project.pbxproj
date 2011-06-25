@@ -28,7 +28,6 @@
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		2892E4100DC94CBA00A64D0F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */; };
 		28C286E10D94DF7D0034E888 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C286E00D94DF7D0034E888 /* RootViewController.m */; };
-		3994620712C91F03005574A6 /* FTLocationSimulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 3994620512C91F03005574A6 /* FTLocationSimulator.m */; };
 		3994620C12C91F1D005574A6 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3994620B12C91F1D005574A6 /* CoreLocation.framework */; };
 		3994621012C91F27005574A6 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3994620F12C91F27005574A6 /* MapKit.framework */; };
 		39C917CF13983B890045489C /* DCCrossHairView.m in Sources */ = {isa = PBXBuildFile; fileRef = 39C917C713983B890045489C /* DCCrossHairView.m */; };
@@ -146,9 +145,6 @@
 		28C286DF0D94DF7D0034E888 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		28C286E00D94DF7D0034E888 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		3994620312C91F03005574A6 /* fakeLocations.kml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = fakeLocations.kml; sourceTree = "<group>"; };
-		3994620412C91F03005574A6 /* FTLocationSimulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTLocationSimulator.h; sourceTree = "<group>"; };
-		3994620512C91F03005574A6 /* FTLocationSimulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTLocationSimulator.m; sourceTree = "<group>"; };
 		3994620B12C91F1D005574A6 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		3994620F12C91F27005574A6 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		39C917BB139837940045489C /* PSIncludes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSIncludes.h; sourceTree = "<group>"; };
@@ -351,7 +347,6 @@
 				7856A44C12B4445C0025424F /* CrashReporterSender */,
 				39C917C513983B890045489C /* DCIntrospect */,
 				78E9B18912B449B800B32768 /* FlurryLib */,
-				3994620212C91F03005574A6 /* FTLocationSimulator */,
 				78BCB96F12B524320093AE0C /* HockeyKit */,
 				787BC4EF12DB0C62008DC03C /* JSON */,
 				78E9B20812B44D4300B32768 /* regexkitlite */,
@@ -372,17 +367,6 @@
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
-		};
-		3994620212C91F03005574A6 /* FTLocationSimulator */ = {
-			isa = PBXGroup;
-			children = (
-				3994620312C91F03005574A6 /* fakeLocations.kml */,
-				3994620412C91F03005574A6 /* FTLocationSimulator.h */,
-				3994620512C91F03005574A6 /* FTLocationSimulator.m */,
-			);
-			name = FTLocationSimulator;
-			path = ../FTLocationSimulator;
-			sourceTree = SOURCE_ROOT;
 		};
 		39C917B8139836750045489C /* View Controller */ = {
 			isa = PBXGroup;
@@ -737,7 +721,6 @@
 				78E9B23212B44DE400B32768 /* ASIHTTPRequest.m in Sources */,
 				78E9B23312B44DE400B32768 /* ASIInputStream.m in Sources */,
 				78E9B23412B44DE400B32768 /* ASINetworkQueue.m in Sources */,
-				3994620712C91F03005574A6 /* FTLocationSimulator.m in Sources */,
 				787BC4F612DB0C6E008DC03C /* JSONKit.m in Sources */,
 				7896675213322CC6004140D5 /* NSString+HockeyAdditions.m in Sources */,
 				7896675313322CC6004140D5 /* PSAppStoreHeader.m in Sources */,
