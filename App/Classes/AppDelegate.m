@@ -190,6 +190,8 @@
 #ifdef kUseFlurryStatistics
     [FlurryAPI startSession:kFlurryStatisticsKey];
 #endif
+    
+    [[PSReachability sharedPSReachability] startCheckingHostAddress:kReachabilityHostURL];
 }
 
 @end

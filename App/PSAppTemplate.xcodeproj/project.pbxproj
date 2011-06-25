@@ -37,6 +37,7 @@
 		39C917D213983B890045489C /* DCStatusBarOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 39C917CE13983B890045489C /* DCStatusBarOverlay.m */; };
 		39C9181F1398E1950045489C /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 39C9181E1398E1950045489C /* Default.png */; };
 		39C9185B1398EBC40045489C /* PSWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 39C9185A1398EBC40045489C /* PSWindow.m */; };
+		39F772A513B63DD9006E12AF /* PSBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39F772A413B63DD9006E12AF /* PSBaseViewController.m */; };
 		7856A40C12B441D10025424F /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7856A40B12B441D10025424F /* MobileCoreServices.framework */; };
 		7856A40E12B441E00025424F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7856A40D12B441E00025424F /* SystemConfiguration.framework */; };
 		7856A41412B441F40025424F /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7856A41312B441F40025424F /* libz.1.1.3.dylib */; };
@@ -163,6 +164,8 @@
 		39C9181E1398E1950045489C /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = Images/Default.png; sourceTree = "<group>"; };
 		39C918591398EBC40045489C /* PSWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSWindow.h; sourceTree = "<group>"; };
 		39C9185A1398EBC40045489C /* PSWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSWindow.m; sourceTree = "<group>"; };
+		39F772A313B63DD9006E12AF /* PSBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSBaseViewController.h; sourceTree = "<group>"; };
+		39F772A413B63DD9006E12AF /* PSBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSBaseViewController.m; sourceTree = "<group>"; };
 		7856A40B12B441D10025424F /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		7856A40D12B441E00025424F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		7856A41312B441F40025424F /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
@@ -384,6 +387,8 @@
 		39C917B8139836750045489C /* View Controller */ = {
 			isa = PBXGroup;
 			children = (
+				39F772A313B63DD9006E12AF /* PSBaseViewController.h */,
+				39F772A413B63DD9006E12AF /* PSBaseViewController.m */,
 				28C286DF0D94DF7D0034E888 /* RootViewController.h */,
 				28C286E00D94DF7D0034E888 /* RootViewController.m */,
 			);
@@ -595,6 +600,9 @@
 /* Begin PBXProject section */
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "PSAppTemplate" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
@@ -746,6 +754,7 @@
 				39C917D113983B890045489C /* DCIntrospect.m in Sources */,
 				39C917D213983B890045489C /* DCStatusBarOverlay.m in Sources */,
 				39C9185B1398EBC40045489C /* PSWindow.m in Sources */,
+				39F772A513B63DD9006E12AF /* PSBaseViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -846,6 +855,7 @@
 				"GCC_THUMB_SUPPORT[arch=armv7]" = YES;
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
 				GCC_WARN_FOUR_CHARACTER_CONSTANTS = YES;
@@ -859,7 +869,6 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				OTHER_LDFLAGS = "-all_load";
-				PREBINDING = NO;
 				RUN_CLANG_STATIC_ANALYZER = YES;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -929,6 +938,7 @@
 				"GCC_THUMB_SUPPORT[arch=armv7]" = YES;
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
 				GCC_WARN_FOUR_CHARACTER_CONSTANTS = YES;
@@ -944,7 +954,6 @@
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				OTHER_LDFLAGS = "-all_load";
-				PREBINDING = NO;
 				RUN_CLANG_STATIC_ANALYZER = NO;
 				SDKROOT = iphoneos;
 			};
@@ -966,6 +975,7 @@
 				"GCC_THUMB_SUPPORT[arch=armv7]" = YES;
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
 				GCC_WARN_FOUR_CHARACTER_CONSTANTS = YES;
@@ -979,7 +989,6 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				OTHER_LDFLAGS = "-all_load";
-				PREBINDING = NO;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "772FFDBF-009F-497C-A043-0B354575D189";
 				SDKROOT = iphoneos;
 			};

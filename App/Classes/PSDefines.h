@@ -12,8 +12,8 @@
 
 #define kIntroFadeAnimation
 #define kUseCrashReporter
-#define kCrashReporterFeedbackEnabled NO    // boolean switch
-#define kPostFinishLaunchDelay      -1.     // set to positive value to call postFinishLaunch in AppDelegate after delay
+#define kCrashReporterFeedbackEnabled NO      // boolean switch
+#define kPostFinishLaunchDelay        1.5     // set to positive value to call postFinishLaunch in AppDelegate after delay
 
 #ifdef DEBUG
 #define kMemoryWarningAfterDeviceShake
@@ -44,8 +44,8 @@
   #define kHockeyUpdateDistributionUrl @"http://petersteinberger.com/appstore"
 #endif
 
-#define kCrashReporterUrl @"http://path-to-crashreporter.com/crashreporter/crash_v200.php"
-
+#define kCrashReporterUrl       @"http://path-to-crashreporter.com/crashreporter/crash_v200.php"
+#define kReachabilityHostURL    @"www.apple.com"
 
 ////////////////////////////////////////////////////////////////////////
 #pragma mark -
