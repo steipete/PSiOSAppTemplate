@@ -152,6 +152,16 @@
 }
 #endif
 
+///////////////////////////////////////////////////////////////////////////////////////////////////
+#pragma mark -
+#pragma mark Reachability
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+- (void)configureForNetworkStatus:(NSNotification *)notification {
+    // NetworkStatus networkStatus = [[notification.userInfo valueForKey:kPSNetworkStatusKey] intValue];
+    
+}
+
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 #pragma mark -
@@ -183,6 +193,7 @@
     
     // post notification to all listeners
     [[NSNotificationCenter defaultCenter] postNotificationName:kAppplicationWillSuspendNotification object:application];
+    [[PSReachability sharedPSReachability] shutdownReachabilityFor:self];
 }
 
 // launched via post selector to speed up launch time
@@ -192,6 +203,7 @@
 #endif
     
     [[PSReachability sharedPSReachability] startCheckingHostAddress:kReachabilityHostURL];
+    [[PSReachability sharedPSReachability] setupReachabilityFor:self];
 }
 
 @end

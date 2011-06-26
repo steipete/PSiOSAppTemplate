@@ -17,7 +17,7 @@
 #import "BWHockeyManager.h"
 #endif
 
-@interface AppDelegate : NSObject <UIApplicationDelegate
+@interface AppDelegate : NSObject <UIApplicationDelegate, PSReachabilityAware
 #ifdef kUseCrashReporter
   ,CrashReportSenderDelegate
 #endif
