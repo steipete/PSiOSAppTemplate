@@ -1,3 +1,12 @@
+Note: I consider this template deprecated. There are *much* better choices available now, like
+AFNetworking, JSONKit, HockeyKit, SSToolKit, ...
+
+Some stuff is really a bad idea (like Flurry), other is now integrated in Foundation (like regular expressions).
+
+I'll keep it around a little longer, but please don't use it anymore.
+
+
+
 This is a working start point for an iOS App. All the little bits are set for you.
 Remember to init all submodules:
 
